@@ -95,3 +95,18 @@
 </div>
 </section>
 </template>
+
+<!--
+<script>
+export default {
+  async fetch (context) {
+    await context.store.dispatch('getNavigationData')
+  },
+  methods: {
+    fetch () {
+      this.$store.dispatch('getNavigationData')
+    }
+  }
+}
+</script>
+-->
