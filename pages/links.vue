@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container is-widescreen">
-      <h1 class="title">
+      <h1 class="title has-text-centered">
         リンク集
       </h1>
       <div class="tile is-ancestor">
@@ -114,17 +114,8 @@
   </section>
 </template>
 
-<!--
 <script>
 export default {
-  async fetch (context) {
-    await context.store.dispatch('getNavigations')
-  },
-  methods: {
-    fetch () {
-      this.$store.dispatch('getNavigations')
-    }
-  }
+  auth: false
 }
 </script>
--->

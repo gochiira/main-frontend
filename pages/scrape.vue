@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="pageloader" :class="{'is-active': isLoading, 'is-danger': isFailed }">
+    <div class="pageloader" :class="{'is-active': isLoading, 'is-danger': isFailed, 'is-warning':isSending}">
       <span class="title">{{ LoadingText }}</span>
     </div>
     <div class="container is-widescreen has-text-centered">
@@ -57,7 +57,7 @@
       </table>
       <div class="columns">
         <div class="column has-text-centered is-centered">
-          <button class="button is-primary is-fullwidth is-large">
+          <button class="button is-primary is-fullwidth is-large" :disabled="isUploadDisabled" @click="upload">
             送信
           </button>
         </div>
@@ -98,6 +98,7 @@ export default {
         url = ''
         break
     }
+    let tags = []
     let isLoading = false
     let isFailed = false
     let thumbnails = []
@@ -108,6 +109,8 @@ export default {
       artist: '',
       tags: [],
       source: '',
+      originService: '',
+      originUrl: '',
       R18: false,
       imgs: [{
         width: '100',
@@ -147,7 +150,21 @@ export default {
           (tag) => { return !ngTags.includes(tag) }
         )
         thumbnails = illust.imgs.map(img => img.thumb_src)
+        tags = illust.tags.map(tag => ({ text: tag }))
         illust.tags = illust.tags.map(tag => ({ text: tag }))
+        illust.originUrl = url
+        illust.artist = illust.artist.split('@')[0]
+        switch (true) {
+          case illust.originUrl.includes('twitter'):
+            illust.originService = 'Twitter'
+            break
+          case illust.originUrl.includes('pixiv'):
+            illust.originService = 'Pixiv'
+            break
+          default:
+            illust.originService = '独自'
+            break
+        }
         isLoading = false
       } else {
         LoadingText = '取得失敗!'
@@ -155,6 +172,7 @@ export default {
       }
     }
     return {
+      tags,
       thumbnails,
       LoadingText,
       isFailed,
@@ -166,6 +184,8 @@ export default {
     return {
       tag: '',
       tags: [],
+      isSending: false,
+      isUploadDisabled: false,
       validation: [{
         classes: 'max-length',
         rule: tag => tag.text.length > 20
@@ -183,6 +203,41 @@ export default {
   watch: {
     tags () {
       // console.log(this.tags)
+    }
+  },
+  methods: {
+    async upload () {
+      this.isUploadDisabled = true
+      this.isSending = true
+      this.isLoading = true
+      this.LoadingText = '投稿しています...'
+      this.illust.tags = this.tags.map(tag => (tag.text))
+      const params = {
+        title: this.illust.title,
+        caption: this.illust.caption,
+        originService: this.illust.originService,
+        originUrl: this.illust.originUrl,
+        imageUrl: this.illust.originUrl,
+        artist: {
+          name: this.illust.artist
+        },
+        tag: this.illust.tags,
+        chara: [],
+        nsfw: this.illust.R18
+      }
+      // console.log(params)
+      const response = await this.$axios.post('/arts', params)
+      this.isSending = false
+      if (response.data.status === 201) {
+        this.LoadingText = '投稿しました!'
+      } else {
+        this.LoadingText = '投稿に失敗しました'
+        this.isFailed = true
+      }
+      setTimeout(this.closeWindow, 2000)
+    },
+    closeWindow () {
+      open('about:blank', '_self').close()
     }
   }
 }
