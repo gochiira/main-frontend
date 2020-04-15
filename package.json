@@ -1,8 +1,8 @@
 {
   "name": "Gochiusa_Illustration",
   "version": "1.0.0",
-  "description": "Gochiira web side",
-  "author": "Dosugamea@SourceTree",
+  "description": "ごちうさイラストまとめサイト",
+  "author": "Omado",
   "private": true,
   "scripts": {
     "dev": "nuxt --hostname 192.168.0.3",
