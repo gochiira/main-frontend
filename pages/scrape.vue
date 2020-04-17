@@ -8,52 +8,54 @@
         イラスト登録
       </h2>
       <table class="table is-fullwidth centered-table">
-        <tr><td>画像</td><td><ImageSelecter :image-source="thumbnails" :is-button-disabled="sendAsNumbered" /></td></tr>
-        <tr><td>名称</td><td><input v-model="illust.title" class="input" type="text"></td></tr>
-        <tr><td>説明</td><td><textarea v-model="illust.caption" class="textarea" rows="3" type="text" /></td></tr>
-        <tr>
-          <td>タグ</td>
-          <td>
-            <vue-tags-input
-              v-model="tag"
-              :tags="illust.tags"
-              :validation="validation"
-              @tags-changed="newTags => tags = newTags"
-            />
-          </td>
-        </tr>
-        <tr><td>作者</td><td><input v-model="illust.artist" class="input" type="text"></td></tr>
-        <tr><td>ソース</td><td><input v-model="illust.source" class="input" type="text"></td></tr>
-        <tr>
-          <td>R18</td>
-          <td>
-            <div class="field">
-              <input
-                id="isR18Form"
-                v-model="illust.R18"
-                type="checkbox"
-                name="switchRoundedDanger"
-                class="switch is-rounded is-danger"
-              >
-              <label for="isR18Form" />
-            </div>
-          </td>
-        </tr>
-        <tr v-if="illust.imgs.length > 1">
-          <td>連番</td>
-          <td>
-            <div class="field">
-              <input
-                id="withNum"
-                v-model="sendAsNumbered"
-                type="checkbox"
-                name="switchRoundedDanger"
-                class="switch is-rounded is-secondary"
-              >
-              <label for="withNum" />
-            </div>
-          </td>
-        </tr>
+        <tbody>
+          <tr><td>画像</td><td><ImageSelecter :image-source="thumbnails" @onSelectedImageChanged="onSelectedImageChanged" :is-button-disabled="sendAsNumbered" /></td></tr>
+          <tr><td>名称</td><td><input v-model="illust.title" class="input" type="text"></td></tr>
+          <tr><td>説明</td><td><textarea v-model="illust.caption" class="textarea" rows="3" type="text" /></td></tr>
+          <tr>
+            <td>タグ</td>
+            <td>
+              <vue-tags-input
+                v-model="tag"
+                :tags="illust.tags"
+                :validation="validation"
+                @tags-changed="newTags => tags = newTags"
+              />
+            </td>
+          </tr>
+          <tr><td>作者</td><td><input v-model="illust.artist" class="input" type="text"></td></tr>
+          <tr><td>ソース</td><td><input v-model="illust.source" class="input" type="text"></td></tr>
+          <tr>
+            <td>R18</td>
+            <td>
+              <div class="field">
+                <input
+                  id="isR18Form"
+                  v-model="illust.R18"
+                  type="checkbox"
+                  name="switchRoundedDanger"
+                  class="switch is-rounded is-danger"
+                >
+                <label for="isR18Form" />
+              </div>
+            </td>
+          </tr>
+          <tr v-if="illust.imgs.length > 1">
+            <td>連番</td>
+            <td>
+              <div class="field">
+                <input
+                  id="withNum"
+                  v-model="sendAsNumbered"
+                  type="checkbox"
+                  name="switchRoundedDanger"
+                  class="switch is-rounded is-secondary"
+                >
+                <label for="withNum" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
       <div class="columns">
         <div class="column has-text-centered is-centered">
@@ -186,6 +188,7 @@ export default {
       tags: [],
       isSending: false,
       isUploadDisabled: false,
+      selection: 1,
       validation: [{
         classes: 'max-length',
         rule: tag => tag.text.length > 20
@@ -206,6 +209,9 @@ export default {
     }
   },
   methods: {
+    onSelectedImageChanged (newSelection) {
+      this.selection = newSelection + 1
+    },
     async upload () {
       this.isUploadDisabled = true
       this.isSending = true
@@ -217,7 +223,7 @@ export default {
         caption: this.illust.caption,
         originService: this.illust.originService,
         originUrl: this.illust.originUrl,
-        imageUrl: this.illust.originUrl,
+        imageUrl: this.illust.originUrl + '?page=' + this.selection,
         artist: {
           name: this.illust.artist
         },
