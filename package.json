@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt --hostname 192.168.0.3",
+    "dev-vscode": "node --hostname 192.168.0.3 --inspect-brk=9229 node_modules/nuxt/bin/nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
