@@ -169,8 +169,9 @@ export default {
   /*
   ** Build configuration
   */
-  buildDir: 'functions/nuxt',
+  buildDir: '.nuxt',
   build: {
+    publicPath: 'https://cdn.gochiusa.team/core_sys',
     postcss: {
       preset: {
         features: {
