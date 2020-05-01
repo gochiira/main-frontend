@@ -13,11 +13,28 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'robots', content: 'noindex,nofollow,noarchive' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'og:title', property: 'og:title', content: 'ごちイラ' },
+      { hid: 'og:description', property: 'og:description', content: 'ごちうさイラスト専用検索エンジン' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'ごちイラ' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
+      { hid: 'og:url', property: 'og:url', content: 'https://illust.gochiusa.team' },
+      { hid: 'og:image', property: 'og:image', content: 'https://illust.gochiusa.team/logo.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css' }
+      {
+        rel: 'preload',
+        href: 'https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css',
+        as: 'style'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css',
+        media: 'print',
+        onload: "this.media='all'"
+      }
     ]
   },
   /*
@@ -37,13 +54,13 @@ export default {
   manifest: {
     name: 'Gochiusa Illustrations',
     short_name: 'ごちイラ',
-    description: '突然の神絵の消失に泣いた日々。この絵師誰だよとキレた日々。そんな日々をなくしたい。',
+    description: 'ごちうさイラスト専用検索エンジン',
     lang: 'ja',
     theme_color: '#7b5544',
     background_color: '#7b5544',
     display: 'standalone',
-    scope: '/',
-    start_url: '/'
+    scope: 'https://illust.gochiusa.team',
+    start_url: 'https://illust.gochiusa.team'
   },
   /*
   ** Customize the progress-bar color

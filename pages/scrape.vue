@@ -234,7 +234,7 @@ export default {
       // console.log(params)
       const response = await this.$axios.post('/arts', params)
       this.isSending = false
-      if (response.data.status === 201) {
+      if (response.data.status === 202) {
         this.LoadingText = '投稿しました!'
       } else {
         this.LoadingText = '投稿に失敗しました'
