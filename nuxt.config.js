@@ -20,7 +20,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
       { hid: 'og:url', property: 'og:url', content: 'https://illust.gochiusa.team' },
-      { hid: 'og:image', property: 'og:image', content: 'https://illust.gochiusa.team/logo.png' }
+      { hid: 'og:image', property: 'og:image', content: 'http://i.imgur.com/e1GqxKW.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -40,6 +40,9 @@ export default {
   /*
   ** PWA Config
   */
+  workbox: {
+    dev: false
+  },
   manifest: {
     name: 'Gochiusa Illustrations',
     short_name: 'ごちイラ',
@@ -90,10 +93,24 @@ export default {
     '@nuxtjs/auth',
     '@nuxtjs/dotenv',
     '@nuxtjs/device',
+    '@nuxtjs/onesignal',
     'nuxt-fontawesome',
     'cookie-universal-nuxt',
     'nuxt-webfontloader'
   ],
+  /*
+  ** Post Notify
+  */
+  oneSignal: {
+    init: {
+      appId: 'a1b6ec4e-76d3-4c78-bdab-7692ca367e73',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: false
+      }
+    },
+    importScripts: ['sw.js']
+  },
   /*
   ** Nuxt-fontawesome
   */
@@ -129,7 +146,8 @@ export default {
           'faKeyboard',
           'faUpload',
           'faChevronDown',
-          'faChevronUp'
+          'faChevronUp',
+          'faList'
         ]
       },
       {
@@ -166,7 +184,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'http://127.0.0.1:5000',
+    baseURL: 'http://localhost:5000',
     browserBaseURL: process.env.API_ENDPOINT,
     proxyHeaders: true
   },
