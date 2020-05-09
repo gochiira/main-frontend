@@ -26,32 +26,17 @@ export default {
         this.form.code = this.$route.query.code
         try {
           await this.$auth.loginWith('local', { data: this.form })
-          const cookies = {
+          const member = {
             name: 'gochiira_member',
             value: 'true',
             opts: {
               path: '/',
-              domain: '',
+              domain: 'gochiusa.team',
               maxAge: 60 * 60 * 24 * 7,
-              secure: true,
-              sameSite: 'Lax'
+              secure: true
             }
           }
-          const domains = [
-            '2014.gochiusa.team',
-            '2015.gochiusa.team',
-            '2016.gochiusa.team',
-            '2017.gochiusa.team',
-            '2018.gochiusa.team',
-            '2019.gochiusa.team',
-            '2020.gochiusa.team'
-          ]
-          const cookieList = []
-          domains.forEach((domain) => {
-            cookies.opts.domain = domain
-            cookieList.push(cookies)
-          })
-          this.$cookies.setAll(cookieList)
+          this.$cookies.set(member)
           this.$router.push({ path: '/' })
         } catch (error) {
           this.$router.push({ path: '/login?err=1' })
