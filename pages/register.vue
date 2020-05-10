@@ -250,18 +250,7 @@ export default {
       if (data.status === 201) {
         this.form.id = this.form.displayID
         await this.$auth.loginWith('local', { data: this.form })
-        const member = {
-          name: 'gochiira_member',
-          value: 'true',
-          opts: {
-            path: '/',
-            domain: 'gochiusa.team',
-            maxAge: 60 * 60 * 24 * 7,
-            secure: true
-          }
-        }
-        this.$cookies.set(member)
-        this.$router.push({ path: '/' })
+        this.postLoggedIn()
       } else {
         this.notificationDeleted = false
         this.notificationClasses = 'is-danger'
