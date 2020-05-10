@@ -40,7 +40,7 @@
               </div>
             </td>
           </tr>
-          <tr v-if="illust.imgs.length > 1">
+          <tr v-if="illust.imgs.length == 100">
             <td>連番</td>
             <td>
               <div class="field">
