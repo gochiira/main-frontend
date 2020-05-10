@@ -13,7 +13,7 @@
                   <div class="columns is-mobile is-vcentered is-centered">
                     <div class="column is-4-touch is-8-hd">
                       <figure class="image has-image-centered">
-                        <img :src="article.img" :alt="article.title + 'logo image'">
+                        <img :src="article.img" :alt="article.title + 'logo image'" decoding="async">
                       </figure>
                     </div>
                     <div class="column is-8-touch is-4-hd has-text-centered">
