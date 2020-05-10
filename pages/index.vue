@@ -12,7 +12,7 @@
                 ごちイラ プロジェクト
               </p>
               <div class="content">
-                α3 20/05/09 Build
+                α3 20/05/11 Build
               </div>
             </article>
           </div>
