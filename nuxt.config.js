@@ -20,7 +20,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
       { hid: 'og:url', property: 'og:url', content: 'https://illust.gochiusa.team' },
-      { hid: 'og:image', property: 'og:image', content: 'http://i.imgur.com/e1GqxKW.png' }
+      { hid: 'og:image', property: 'og:image', content: 'https://i.imgur.com/e1GqxKW.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
