@@ -61,7 +61,8 @@ export default {
   },
   created () {
     if (process.client) {
-      console.log('%cGochiusa Illustrations α2', 'color: blue; font-size: 30px')
+      console.clear()
+      console.log('%cGochiusa Illustrations', 'color: blue; font-size: 30px')
       console.log('We need developers!\nIf you are interested in develop gochiira, contact us from below.\nhttps://twitter.com/shallow_omado')
     }
   },
