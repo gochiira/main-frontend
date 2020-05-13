@@ -229,6 +229,11 @@ export default {
     deletedEvent () {
       this.notificationDeleted = true
     }
+  },
+  head () {
+    return {
+      title: '新規登録'
+    }
   }
 }
 </script>

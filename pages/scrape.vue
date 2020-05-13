@@ -245,6 +245,11 @@ export default {
     closeWindow () {
       open('about:blank', '_self').close()
     }
+  },
+  head () {
+    return {
+      title: 'イラスト登録フォーム'
+    }
   }
 }
 </script>
