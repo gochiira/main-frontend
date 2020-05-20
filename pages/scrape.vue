@@ -81,6 +81,7 @@
 
 <script>
 import ImageSelecter from '~/components/ui/ImageSelecter.vue'
+import removeEmoji from '~/plugins/removeEmoji.js'
 
 export default {
   components: {
@@ -155,7 +156,7 @@ export default {
         tags = illust.tags.map(tag => ({ text: tag }))
         illust.tags = illust.tags.map(tag => ({ text: tag }))
         illust.originUrl = url
-        illust.artist = illust.artist.split('@')[0]
+        illust.artist = removeEmoji.removeEmoji(illust.artist.split('@')[0])
         switch (true) {
           case illust.originUrl.includes('twitter'):
             illust.originService = 'Twitter'
@@ -204,11 +205,22 @@ export default {
     }
   },
   watch: {
-    tags () {
-      // console.log(this.tags)
+    'illust.artist' (value) {
+      this.illust.artist = this.removeEmoji(value)
     }
   },
   methods: {
+    removeEmoji (t) {
+      const ranges = [
+        '\uD83C[\uDF00-\uDFFF]',
+        '\uD83D[\uDC00-\uDE4F]',
+        '\uD83D[\uDE80-\uDEFF]',
+        '\uD7C9[\uDE00-\uDEFF]',
+        '[\u2600-\u27BF]'
+      ]
+      const reg = new RegExp(ranges.join('|'), 'g')
+      return t.replace(reg, '')
+    },
     onSelectedImageChanged (newSelection) {
       this.selection = newSelection + 1
     },
