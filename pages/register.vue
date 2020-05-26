@@ -156,7 +156,7 @@
               <nuxt-link to="/login">
                 ログインはこちら
               </nuxt-link> &nbsp;·&nbsp;
-              <a :href="CONTACT">
+              <a :href="CONTACT" target="_blank" rel="noopener noreferrer">
                 問い合わせはこちら
               </a>
             </p>

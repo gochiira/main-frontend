@@ -23,15 +23,15 @@
           <Accordion title="ごちイラが重い、レイアウトが崩れる">
             <p>
               ごちイラは<a href="https://www.dell.com/ja-jp/shop/cty/pdp/spd/inspiron-15-7567-laptop?ref=PD_OC">Windows10/Chrome最新版</a>、
-              <a href="https://www.oppo.com/jp/smartphone-reno-a/">Android9/Chrome最新版</a>、
-              <a href="https://ja.wikipedia.org/wiki/IPhone_6s">iOS12/Chrome最新版</a>でのみ動作が確認されています。
-              <a href="https://time-space.kddi.com/digicul-column/suguyaru/20151221/">
+              <a href="https://www.oppo.com/jp/smartphone-reno-a/" target="_blank" rel="noopener noreferrer">Android9/Chrome最新版</a>、
+              <a href="https://ja.wikipedia.org/wiki/IPhone_6s" target="_blank" rel="noopener noreferrer">iOS12/Chrome最新版</a>でのみ動作が確認されています。
+              <a href="https://time-space.kddi.com/digicul-column/suguyaru/20151221/" target="_blank" rel="noopener noreferrer">
                 インターネットエクスプローラ、ネットスケープなどの古代のブラウザ
               </a>、
-              <a href="https://gigazine.net/news/20190815-fridge-tweet/">3DS、WiiU、冷蔵庫など</a>
+              <a href="https://gigazine.net/news/20190815-fridge-tweet/" target="_blank" rel="noopener noreferrer">3DS、WiiU、冷蔵庫など</a>
               では正常に表示されないと思います。
               また<a href="https://ja.wikipedia.org/wiki/Tor">JavaScriptがオフのブラウザ</a>では表示できません。
-              大変恐れ入りますが、<a href="https://kakaku.com/pc/note-pc/guide_0020/">普通のコンピュータ</a>をご用意ください。
+              大変恐れ入りますが、<a href="https://kakaku.com/pc/note-pc/guide_0020/" target="_blank" rel="noopener noreferrer">普通のコンピュータ</a>をご用意ください。
             </p>
           </Accordion>
           <Accordion title="ごちイラの運営は違法じゃないの?">
@@ -85,7 +85,7 @@
           </Accordion>
           <Accordion title="抜けがある・この画像が壊れてる・機能リクエスト">
             <p>
-              <a href="https://forms.gle/uf3gYMfFSTNxqDuW8">
+              <a href="https://forms.gle/uf3gYMfFSTNxqDuW8" target="_blank" rel="noopener noreferrer">
                 お問い合わせフォームからご連絡ください
               </a>
             </p>
@@ -94,7 +94,7 @@
             <p>
               ごちイラは 日本国内の法律に則り運営されています。
               ごちイラ内に記載してほしくない、または違法コンテンツが記載されている場合は
-              権利者の方が直接、<a href="https://forms.gle/JSG5rWkC94fJaGWbA">こちら</a>のフォームよりご連絡ください。
+              権利者の方が直接、<a href="https://forms.gle/JSG5rWkC94fJaGWbA" target="_blank" rel="noopener noreferrer">こちら</a>のフォームよりご連絡ください。
               フォーム内容が少々複雑ではありますが、虚偽申請を防ぐための措置です。
               お手数おかけしますがご協力お願いします。
             </p>
