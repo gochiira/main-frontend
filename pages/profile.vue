@@ -123,6 +123,22 @@
                     </div>
                   </td>
                 </tr>
+                <tr v-if="!isPC">
+                  <td>スワイプメニュー</td>
+                  <td>
+                    <div class="field">
+                      <input
+                        id="switchSwipe"
+                        v-model="useSwipe"
+                        type="checkbox"
+                        name="switchSwipe"
+                        class="switch is-rounded is-info"
+                        :checked="useSwipe"
+                      >
+                      <label for="switchSwipe" />
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>上に戻るボタン</td>
                   <td>
@@ -400,7 +416,8 @@ export default {
       isPC: this.$cookies.get('isPC'),
       isLeftHanded: this.$cookies.get('isLeftHanded'),
       useWebP: this.$cookies.get('useWebP'),
-      isJumpEnabled: this.$cookies.get('isJumpEnabled')
+      isJumpEnabled: this.$cookies.get('isJumpEnabled'),
+      useSwipe: this.$cookies.get('useSwipe')
     }
   },
   computed: {
@@ -439,6 +456,13 @@ export default {
         path: '/',
         maxAge: 60 * 60 * 24 * 31
       })
+    },
+    useSwipe (val) {
+      this.$cookies.set('useSwipe', val, {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 31
+      })
+      location.reload()
     },
     isLeftHanded (val) {
       this.$cookies.set('isLeftHanded', val, {
