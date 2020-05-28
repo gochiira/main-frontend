@@ -40,7 +40,7 @@
               </div>
             </td>
           </tr>
-          <tr v-if="illust.imgs.length == 100">
+          <tr v-if="illust.imgs.length > 1">
             <td>連番</td>
             <td>
               <div class="field">
@@ -129,6 +129,32 @@ export default {
       if (response.data.status === '200') {
         illust = data.data.illust
         const ngWords = [' ', '　']
+        const ngTags = [
+          'gochiusa',
+          'ごちうさ',
+          'ご注文はうさぎですか',
+          'ご注文はうさぎですか?',
+          'R-18',
+          'R18',
+          'チノ',
+          'シャロ',
+          'ココア',
+          'リゼ',
+          '千夜'
+        ]
+        const addTags = {
+          チノ: '香風智乃',
+          シャロ: '桐間紗路',
+          ココア: '保登心愛',
+          リゼ: '天々座理世',
+          千夜: '宇治松千夜',
+          制服: '制服'
+        }
+        for (const t in addTags) {
+          if (illust.title.contains(t)) {
+            illust.tags.push(addTags[t])
+          }
+        }
         illust.tags.forEach(
           (tag) => {
             ngWords.push('#' + tag)
@@ -136,27 +162,18 @@ export default {
           }
         )
         ngWords.forEach(
-          (tag) => {
-            illust.title = illust.title.replace(tag, '')
-            illust.caption = illust.caption.replace(tag, '')
+          (w) => {
+            illust.title = illust.title.replace(w, '')
+            illust.caption = illust.caption.replace(w, '')
           }
         )
-        const ngTags = [
-          'gochiusa',
-          'ごちうさ',
-          'ご注文はうさぎですか',
-          'ご注文はうさぎですか?',
-          'R-18',
-          'R18'
-        ]
-        illust.tags = illust.tags.filter(
-          (tag) => { return !ngTags.includes(tag) }
-        )
-        thumbnails = illust.imgs.map(img => img.thumb_src)
-        tags = illust.tags.map(tag => ({ text: tag }))
-        illust.tags = illust.tags.map(tag => ({ text: tag }))
+        // 余計な文字は消す
+        illust.title = illust.title.trim()
+        illust.caption = illust.title.trim()
+        illust.artist = illust.artist.split('@')[0]
+        illust.artist = illust.artist.split('＠')[0]
+        illust.artist = removeEmoji.removeEmoji(illust.artist)
         illust.originUrl = url
-        illust.artist = removeEmoji.removeEmoji(illust.artist.split('@')[0])
         switch (true) {
           case illust.originUrl.includes('twitter'):
             illust.originService = 'Twitter'
@@ -168,6 +185,13 @@ export default {
             illust.originService = '独自'
             break
         }
+        illust.tags = illust.tags.map(tag => ({ text: tag }))
+        thumbnails = illust.imgs.map(img => img.thumb_src)
+        tags = illust.tags.filter(
+          (tag) => { return !ngTags.includes(tag) }
+        )
+        illust.tags = tags.map(tag => ({ text: tag }))
+        tags = tags.map(tag => ({ text: tag }))
         isLoading = false
       } else {
         LoadingText = '取得失敗!'
@@ -230,6 +254,10 @@ export default {
       this.isLoading = true
       this.LoadingText = '投稿しています...'
       this.illust.tags = this.tags.map(tag => (tag.text))
+      // 全く同じなら説明文は消す
+      if (this.illust.title === this.illust.caption) {
+        this.illust.caption = ''
+      }
       const params = {
         title: this.illust.title,
         caption: this.illust.caption,
@@ -243,16 +271,36 @@ export default {
         chara: [],
         nsfw: this.illust.R18
       }
-      // console.log(params)
-      const response = await this.$axios.post('/arts', params)
-      this.isSending = false
-      if (response.data.status === 202) {
-        this.LoadingText = '投稿しました!'
+      // 連番アップロード
+      if (this.sendAsNumbered) {
+        const tasks = []
+        for (let page = 1; page < this.illust.imgs.length + 1; page++) {
+          params.imageUrl = this.illust.originUrl + '?page=' + page
+          if (page !== 1) {
+            params.title = this.illust.title + ` (${page})`
+          }
+          tasks.push(this.$axios.post('/arts', params))
+        }
+        const taskResults = await Promise.all(tasks)
+        this.isSending = false
+        if (taskResults.every(v => v.data.status === 202)) {
+          this.LoadingText = '投稿しました!'
+        } else {
+          this.LoadingText = '投稿に失敗しました'
+          this.isFailed = true
+        }
+      // 通常アップロード
       } else {
-        this.LoadingText = '投稿に失敗しました'
-        this.isFailed = true
+        const response = await this.$axios.post('/arts', params)
+        this.isSending = false
+        if (response.data.status === 202) {
+          this.LoadingText = '投稿しました!'
+        } else {
+          this.LoadingText = '投稿に失敗しました'
+          this.isFailed = true
+        }
       }
-      setTimeout(this.closeWindow, 2000)
+      setTimeout(this.closeWindow, 1500)
     },
     closeWindow () {
       open('about:blank', '_self').close()
