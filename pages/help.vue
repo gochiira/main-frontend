@@ -109,6 +109,7 @@
 import Accordion from '~/components/ui/Accordion.vue'
 
 export default {
+  auth: false,
   components: {
     Accordion
   },

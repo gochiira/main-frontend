@@ -101,6 +101,7 @@
 
 <script>
 export default {
+  auth: false,
   head () {
     return {
       title: '利用規約'
