@@ -110,6 +110,9 @@ import Accordion from '~/components/ui/Accordion.vue'
 
 export default {
   auth: false,
+  layout (context) {
+    return context.$auth.loggedIn ? 'default' : 'gate'
+  },
   components: {
     Accordion
   },
