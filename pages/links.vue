@@ -7,9 +7,9 @@
       <div class="columns is-multiline">
         <div v-for="article in articles" :key="article.title" class="column is-6">
           <div class="card">
-            <a :href="'https://' + article.link" rel="noopener noreferrer nofollow">
+            <a :href="'https://' + article.link" target="_blank" rel="noopener noreferrer nofollow">
               <div class="card-content">
-                <a class="has-text-dark">
+                <div class="has-text-dark">
                   <div class="container">
                     <div class="columns is-mobile is-vcentered is-centered">
                       <div class="column is-6-touch is-8-hd">
@@ -34,7 +34,7 @@
                       {{ article.description }}
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
             </a>
           </div>
