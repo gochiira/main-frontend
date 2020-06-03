@@ -71,13 +71,37 @@ export default {
           title: 'ごちうさエイプリル',
           link: 'april.gochiusa.team',
           img: 'aprilfool_calender.png',
-          description: 'ごちうさのエイプリルフール関連サイトへのポータル'
+          description: 'エイプリルフールの思い出保管庫'
         },
         {
           title: 'ごちうさコミュ',
           link: 'illust.gochiusa.team',
           img: 'figure_group_colorful.png',
           description: 'ごちうさファンコミュニティへのポータル(そのうち作成)'
+        },
+        {
+          title: 'SauceNAO',
+          link: 'saucenao.com',
+          img: 'SauceNao.png',
+          description: 'PixivやDanbooru等から画像の出典元を調べてくれるサービス'
+        },
+        {
+          title: '二次元画像詳細検索',
+          link: 'ascii2d.net',
+          img: 'nijigen.ico',
+          description: 'TwitterやPixiv等から出典元を調べてくれるサービス'
+        },
+        {
+          title: '蒼天画廊',
+          link: 'azure-gallery.net',
+          img: 'soutengarou.png',
+          description: 'アズレンやVTuberのイラストをTwitterから検索できるサービス'
+        },
+        {
+          title: 'Buhitter',
+          link: 'buhitter.com',
+          img: 'buhitter.png',
+          description: 'イラストをアニメやキャラ別にTwitterから検索できるサービス'
         }
       ]
     }
