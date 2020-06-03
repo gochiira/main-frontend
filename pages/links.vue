@@ -71,13 +71,25 @@ export default {
           title: 'ごちうさエイプリル',
           link: 'april.gochiusa.team',
           img: 'aprilfool_calender.png',
-          description: 'エイプリルフールの思い出保管庫'
+          description: 'エイプリルフール保管庫 (要ごちイラログイン)'
         },
         {
-          title: 'ごちうさコミュ',
-          link: 'illust.gochiusa.team',
+          title: 'UsagiCloud',
+          link: 'library.gochiusa.team',
           img: 'figure_group_colorful.png',
-          description: 'ごちうさファンコミュニティへのポータル(そのうち作成)'
+          description: '未実装'
+        },
+        {
+          title: 'ごちイラBot(LINE)',
+          link: 'line.me/R/ti/p/398rsxvj',
+          img: 'line.png',
+          description: '未実装'
+        },
+        {
+          title: 'ごちイラBot(Twitter)',
+          link: 'twitter.com/gochiira',
+          img: 'twitter.png',
+          description: '未実装'
         },
         {
           title: 'SauceNAO',
