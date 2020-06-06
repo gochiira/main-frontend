@@ -139,6 +139,22 @@
                     </div>
                   </td>
                 </tr>
+                <tr v-if="!isPC">
+                  <td>下メニュー</td>
+                  <td>
+                    <div class="field">
+                      <input
+                        id="switchBottom"
+                        v-model="useBottom"
+                        type="checkbox"
+                        name="switchBottom"
+                        class="switch is-rounded is-info"
+                        :checked="useBottom"
+                      >
+                      <label for="switchBottom" />
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>上に戻るボタン</td>
                   <td>
@@ -419,7 +435,8 @@ export default {
       isLeftHanded: this.$cookies.get('isLeftHanded'),
       useWebP: this.$cookies.get('useWebP'),
       isJumpEnabled: this.$cookies.get('isJumpEnabled'),
-      useSwipe: this.$cookies.get('useSwipe')
+      useSwipe: this.$cookies.get('useSwipe'),
+      useBottom: this.$cookies.get('useBottom')
     }
   },
   computed: {
@@ -461,6 +478,13 @@ export default {
     },
     useSwipe (val) {
       this.$cookies.set('useSwipe', val, {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 31 * 6
+      })
+      location.reload()
+    },
+    useBottom (val) {
+      this.$cookies.set('useBottom', val, {
         path: '/',
         maxAge: 60 * 60 * 24 * 31 * 6
       })
