@@ -39,10 +39,25 @@
             <td>
               <vue-tags-input
                 v-model="tag"
+                placeholder="タグを追加"
                 :tags="illust.tags"
                 :validation="validation"
                 @tags-changed="newTags => illust.tags = newTags"
               />
+              <br>
+              <div class="field is-grouped is-grouped-multiline">
+                <div v-for="c in charas" :key="c" @click="illust.tags.push({text:c})">
+                  <div v-if="!tagList.includes(c)" class="control" style="margin-right: 5px; margin-bottom:2px;">
+                    <div class="tags has-addons">
+                      <div class="tag is-primary">
+                        {{ c }}
+                      </div>
+                      <a class="tag is-secondary">+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
             </td>
           </tr>
           <tr>
@@ -182,12 +197,24 @@ export default {
         'R-18',
         'R18',
         'チノ',
+        'チノちゃん',
         'シャロ',
         'ココア',
         'リゼ',
         '千夜',
         'マヤ',
         'メグ'
+      ],
+      charas: [
+        '香風智乃',
+        '保登心愛',
+        '宇治松千夜',
+        '桐間紗路',
+        '天々座理世',
+        '条河麻耶',
+        '奈津恵',
+        'ティッピー',
+        'ワイルドギース'
       ],
       loading: {
         text: '',
@@ -204,6 +231,11 @@ export default {
           text.includes('<') ||
           text.includes('>')
       }]
+    }
+  },
+  computed: {
+    tagList () {
+      return this.illust.tags.map(tag => (tag.text))
     }
   },
   watch: {
