@@ -74,22 +74,10 @@ export default {
           description: 'エイプリルフール保管庫 (要ごちイラログイン)'
         },
         {
-          title: 'UsagiCloud',
-          link: 'library.gochiusa.team',
+          title: 'ごちうさリンク短縮',
+          link: 'illust.gochiusa.team/shortener',
           img: 'figure_group_colorful.png',
-          description: '未実装'
-        },
-        {
-          title: 'ごちイラBot(LINE)',
-          link: 'line.me/R/ti/p/398rsxvj',
-          img: 'line.png',
-          description: '未実装'
-        },
-        {
-          title: 'ごちイラBot(Twitter)',
-          link: 'twitter.com/gochiira',
-          img: 'twitter.png',
-          description: '未実装'
+          description: 'gcus.page.link でURLを短くする'
         },
         {
           title: 'SauceNAO',
@@ -114,6 +102,18 @@ export default {
           link: 'buhitter.com',
           img: 'buhitter.png',
           description: 'イラストをアニメやキャラ別にTwitterから検索できるサービス'
+        },
+        {
+          title: 'ごちイラBot(LINE)',
+          link: 'line.me/R/ti/p/398rsxvj',
+          img: 'line.png',
+          description: '未実装'
+        },
+        {
+          title: 'ごちイラBot(Twitter)',
+          link: 'twitter.com/gochiira',
+          img: 'twitter.png',
+          description: '未実装'
         }
       ]
     }
