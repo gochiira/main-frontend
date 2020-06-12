@@ -7,25 +7,25 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s | ' + 'ごちイラ',
-    title: 'ごちイラ',
+    titleTemplate: '%s | ' + process.env.SITE_NAME,
+    title: process.env.SITE_NAME,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'robots', content: 'noindex,nofollow,noarchive' },
-      { hid: 'description', name: 'description', content: 'ごちうさイラスト専用検索エンジン' },
-      { hid: 'og:title', property: 'og:title', content: 'ごちイラ' },
-      { hid: 'og:description', property: 'og:description', content: 'ごちうさイラスト専用検索エンジン' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'ごちイラ' },
+      { hid: 'description', name: 'description', content: process.env.SITE_DESCRIPTION },
+      { hid: 'og:title', property: 'og:title', content: process.env.SITE_NAME },
+      { hid: 'og:description', property: 'og:description', content: process.env.SITE_DESCRIPTION },
+      { hid: 'og:site_name', property: 'og:site_name', content: process.env.SITE_NAME },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
       { hid: 'og:url', property: 'og:url', content: 'https://illust.gochiusa.team' },
-      { hid: 'og:image', property: 'og:image', content: 'https://i.imgur.com/e1GqxKW.png' },
+      { hid: 'og:image', property: 'og:image', content: process.env.SITE_OG_IMAGE },
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:title', content: 'ごちイラ' },
-      { name: 'twitter:description', content: 'ごちうさイラスト専用検索エンジン' },
-      { name: 'twitter:image', content: 'https://i.imgur.com/e1GqxKW.png' }
+      { name: 'twitter:title', content: process.env.SITE_NAME },
+      { name: 'twitter:description', content: process.env.SITE_DESCRIPTION },
+      { name: 'twitter:image', content: process.env.SITE_OG_IMAGE }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -49,15 +49,15 @@ export default {
     dev: false
   },
   manifest: {
-    name: 'Gochiusa Illustrations',
-    short_name: 'ごちイラ',
-    description: 'ごちうさイラスト専用検索エンジン',
+    name: process.env.SITE_NAME_FULL,
+    short_name: process.env.SITE_NAME,
+    description: process.env.SITE_DESCRIPTION,
     lang: 'ja',
-    theme_color: '#7b5544',
-    background_color: '#7b5544',
+    theme_color: process.env.SITE_THEME_COLOR,
+    background_color: process.env.SITE_BG_COLOR,
     display: 'standalone',
-    scope: 'https://illust.gochiusa.team',
-    start_url: 'https://illust.gochiusa.team'
+    scope: process.env.SITE_URL,
+    start_url: process.env.SITE_URL
   },
   /*
   ** Customize the progress-bar color
@@ -111,7 +111,7 @@ export default {
   */
   oneSignal: {
     init: {
-      appId: 'a1b6ec4e-76d3-4c78-bdab-7692ca367e73',
+      appId: process.env.ONESIGNAL_ID,
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
         disable: false
@@ -215,7 +215,7 @@ export default {
   ** Tracking User activity
   */
   logRocket: {
-    logRocketId: '3lkkmo/gochiusa_illustrations',
+    logRocketId: process.env.LOGROCKET_ID,
     devModeAllowed: false
   },
   /*
@@ -258,7 +258,7 @@ export default {
   },
   buildDir: '.nuxt',
   build: {
-    publicPath: 'https://cdn.gochiusa.team/core_sys',
+    publicPath: process.env.CDN_ADDR,
     postcss: {
       preset: {
         features: {

@@ -128,9 +128,6 @@
 <script>
 export default {
   auth: false,
-  layout (context) {
-    return context.$auth.loggedIn ? 'default' : 'gate'
-  },
   head () {
     return {
       title: '利用規約'

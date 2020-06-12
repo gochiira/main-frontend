@@ -1,0 +1,64 @@
+{
+    "articles": [
+      {
+        "title": "公式サイト",
+        "link": "gochiusa.com",
+        "img": "animal_usagi_nihon_nousagi.png",
+        "description": "いつもの。やっぱこれだね。親の顔より見た顔。実家のような安心感。"
+      },
+      {
+        "title": "ごちイラ開発部",
+        "link": "line.me/ti/g2/yBHVVHzN90s1r-DPlk9BFg",
+        "img": "computer_girl.png",
+        "description": "このサイトの開発進捗報告、ちょっとしたごちうさ情報共有などを行うグループ"
+      },
+      {
+        "title": "ごちうさエイプリル",
+        "link": "april.gochiusa.team",
+        "img": "aprilfool_calender.png",
+        "description": "エイプリルフール保管庫 (要ごちイラログイン)"
+      },
+      {
+        "title": "ごちうさリンク短縮",
+        "link": "illust.gochiusa.team/shortener",
+        "img": "figure_group_colorful.png",
+        "description": "gcus.page.link でURLを短くする"
+      },
+      {
+        "title": "SauceNAO",
+        "link": "saucenao.com",
+        "img": "SauceNao.png",
+        "description": "PixivやDanbooru等から画像の出典元を調べてくれるサービス"
+      },
+      {
+        "title": "二次元画像詳細検索",
+        "link": "ascii2d.net",
+        "img": "nijigen.ico",
+        "description": "TwitterやPixiv等から出典元を調べてくれるサービス"
+      },
+      {
+        "title": "蒼天画廊",
+        "link": "azure-gallery.net",
+        "img": "soutengarou.png",
+        "description": "アズレンやVTuberのイラストをTwitterから検索できるサービス"
+      },
+      {
+        "title": "Buhitter",
+        "link": "buhitter.com",
+        "img": "buhitter.png",
+        "description": "イラストをアニメやキャラ別にTwitterから検索できるサービス"
+      },
+      {
+        "title": "ごちイラBot(LINE)",
+        "link": "line.me/R/ti/p/398rsxvj",
+        "img": "line.png",
+        "description": "未実装"
+      },
+      {
+        "title": "ごちイラBot(Twitter)",
+        "link": "twitter.com/gochiira",
+        "img": "twitter.png",
+        "description": "未実装"
+      }
+    ]
+}
