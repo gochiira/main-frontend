@@ -1,7 +1,7 @@
 // グローバル変数で巻き上げないと更新ができない...
 var sakuraCanvas = document.getElementById('js-background')
 var stage = new createjs.Stage("js-background")
-var particleSystem = new particlejs.ParticleSystem()
+var particleSystem = particleSystem = new particlejs.ParticleSystem()
 
 // 設定代入とか
 function initializeSakura() {
@@ -89,10 +89,8 @@ function updateSakura() {
 // 読み込み完了まで待って初期化
 // Vue.js側のinitが終わって要素ができるまで待つ
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        updateSakura()
-        initializeSakura()
-    }, 500)
+    updateSakura()
+    initializeSakura()
 })
 
 // 画面サイズをあわせる
