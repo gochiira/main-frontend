@@ -4,8 +4,8 @@
       <h1 class="title has-text-centered">
         リンク集
       </h1>
-      <div class="columns is-multiline">
-        <div v-for="article in articles" :key="article.title" class="column is-6">
+      <div class="columns is-centered is-multiline">
+        <div v-for="article in articles" :key="article.title" class="column is-4-desktop is-6-tablet">
           <div class="card">
             <a :href="'https://' + article.link" target="_blank" rel="noopener noreferrer nofollow">
               <div class="card-content">

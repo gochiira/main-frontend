@@ -21,8 +21,14 @@
       {
         "title": "ごちうさリンク短縮",
         "link": "illust.gochiusa.team/shortener",
-        "img": "figure_group_colorful.png",
+        "img": "mark_chain_kusari.png",
         "description": "gcus.page.link でURLを短くする"
+      },
+      {
+        "title": "ごちイラガチャ",
+        "link": "random.gochiusa.team",
+        "img": "gachagacha_ataranai.png",
+        "description": "ランダムなごちうさイラストを表示する"
       },
       {
         "title": "SauceNAO",
@@ -33,7 +39,7 @@
       {
         "title": "二次元画像詳細検索",
         "link": "ascii2d.net",
-        "img": "nijigen.ico",
+        "img": "website_kensaku_top.png",
         "description": "TwitterやPixiv等から出典元を調べてくれるサービス"
       },
       {
