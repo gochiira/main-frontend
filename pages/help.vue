@@ -15,9 +15,7 @@
           </Accordion>
           <Accordion title="ごちイラの使い方は?">
             <p>
-              上部メニューから好きな条件を選び検索することで、各種イラストを探すことができます。
-              また、各イラストにいいねを押すことでいいね順ソートの検索に出やすくし、
-              他のユーザーに宣伝できます。詳しくはマイページ内の"ガイド"より。
+              メニューから好きな条件を選び検索することで、各種イラストを探すことができます。
             </p>
           </Accordion>
           <Accordion title="ごちイラが重い、レイアウトが崩れる">
@@ -101,6 +99,13 @@
               お手数おかけしますがご協力お願いします。
             </p>
           </Accordion>
+        </div>
+        <div class="column is-12 has-text-centered is-centered">
+          <nuxt-link to="/extremity-of-thanks">
+            <h1 class="button subtitle is-info">
+              感謝の極み
+            </h1>
+          </nuxt-link>
         </div>
       </div>
     </div>
