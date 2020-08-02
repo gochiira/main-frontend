@@ -10,7 +10,7 @@ function step1() {
 
 function step2() {
     const particlejs_gochiusa = document.createElement('script');
-    particlejs_gochiusa.src = "/particlejs_gochiusa.js";
+    particlejs_gochiusa.src = "https://cdn.gochiusa.team/blossom/particlejs_gochiusa.js";
     particlejs_gochiusa.onload = function () {
         step3()
     }
@@ -19,7 +19,7 @@ function step2() {
 
 function step3() {
     const particlejs_init = document.createElement('script');
-    particlejs_init.src = "/particlejs_init.js";
+    particlejs_init.src = "https://cdn.gochiusa.team/blossom/particlejs_init.js";
     document.body.appendChild(particlejs_init);
 }
 
