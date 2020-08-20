@@ -10,6 +10,7 @@ Vue.mixin({
   methods: {
     showConsoleMessage () {
       if (process.client) {
+        console.clear()
         console.log('%cGochiusa Illustrations', 'color: blue; font-size: 30px')
         console.log('We need developers!\nIf you are interested in develop gochiira, contact us from below.\nhttps://twitter.com/shallow_omado')
       }
