@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import UploadScreen from '~/components/page/upload/UploadScreen.vue'
+import UploadScreen from '@/components/page/upload/UploadScreen.vue'
 
 export default {
   components: {
