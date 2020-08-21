@@ -4,7 +4,7 @@
       <div class="columns is-centered is-vcentered" style="min-height:70vh">
         <div class="column is-7 has-text-centered">
           <h4 class="title">
-            イラスト投稿
+            ページからイラスト投稿
           </h4>
           <p>
             指定されたサイトから情報およびイラストを取得し投稿を行います。
@@ -41,8 +41,13 @@
             <br>
             <br>
             <div class="field is-centered">
-              <nuxt-link to="/upload_image" class="button is-primary is-medium">
+              <nuxt-link to="/upload/image" class="button is-primary is-medium">
                 画像から投稿する場合はこちら
+              </nuxt-link>
+            </div>
+            <div class="field is-centered">
+              <nuxt-link to="/history/upload" class="button is-primary is-medium">
+                投稿履歴の確認はこちら
               </nuxt-link>
             </div>
           </div>
