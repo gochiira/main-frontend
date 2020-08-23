@@ -93,7 +93,7 @@ export default {
       if (possibleLinks) {
         this.scrapeInfo.url = possibleLinks.filter(
           link => (
-            link.includes('twitter.com') || link.includes('pixiv.net') || link.includes('seiga.nicovideo.jp')
+            link.includes('twitter.com') || link.includes('pixiv.net') || link.includes('seiga.nicovideo.jp') || link.includes('danbooru')
           )
         )[0]
       }
