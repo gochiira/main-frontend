@@ -29,7 +29,7 @@
                 >
               </div>
               <p class="help">
-                対応サイト: twitter.com pixiv.net seiga.nicovideo.jp
+                対応サイト: twitter.com pixiv.net seiga.nicovideo.jp danbooru.donmai.us
               </p>
             </div>
             <br>
