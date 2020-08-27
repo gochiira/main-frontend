@@ -1,0 +1,95 @@
+{
+  "site_name": "Gochiira",
+  "langs": {
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "gate": {
+    "gochiusa_official": "Gochiusa Official"
+  },
+  "NavbarUp": {
+    "bar_items": {
+      "menu": "Menu",
+      "list": "All",
+      "keyword": "Keyword",
+      "character": "Character",
+      "tag": "Tag",
+      "artist": "Artist",
+      "uploader": "Uploader",
+      "more": "More",
+      "more_tab": "More",
+      "image": "Image",
+      "upload": "Upload"
+    },
+    "dropdown_items": {
+      "mypage": "Profile",
+      "mylist": "Bookmark",
+      "wallet": "Wallet",
+      "upload": "Upload",
+      "history_upload": "Upload history",
+      "history_search": "Search history",
+      "history_illust": "Browsing history",
+      "library": "Library",
+      "logout": "Logout"
+    },
+    "smart_items": {
+      "home": "Home",
+      "top": "Top",
+      "news": "News",
+      "arts": "Arts",
+      "search": "Search",
+      "user": "User",
+      "other": "Other"
+    }
+  },
+  "NavbarDown": {
+    "terms": "Terms of uses",
+    "privacy": "Privacy policy",
+    "help": "Help",
+    "links": "Links"
+  },
+  "NavbarDownMusic": {
+    "loading": "Loading"
+  },
+  "SearchScreen": {
+    "mute_artist": {
+      "not_muted": "Enable mute for this artist",
+      "muted": "Disable mute for this artist"
+    },
+    "search_methods": {
+      "list": "Search from list: ",
+      "uploader": "Search by uploader: ",
+      "tag": "Search by tag: ",
+      "multiple_tag": "Search by multiple tags: ",
+      "keyword": "Search by keyword: ",
+      "character": "Search by character: ",
+      "artist": "Search by artist: "
+    },
+    "sort": {
+      "latest_art": "Latest",
+      "oldest_art": "Oldest",
+      "most_liked": "Most liked",
+      "least_liked": "Least liked"
+    },
+    "no_more_result": "You read all results"
+  },
+  "ListScreen": {
+    "filer_keyword": "Filter: ex.香風智乃",
+    "sort": {
+      "latest_art": "Latest",
+      "oldest_art": "Oldest",
+      "amount_many": "Amount (Greater)",
+      "amount_few": "Amount (Less)",
+      "most_liked": "Most liked",
+      "least_liked": "Least liked",
+      "z_to_a": "A to Z",
+      "a_to_z": "Z to A"
+    },
+    "no_more_result": "You read all results"
+  },
+  "Wiki": {
+    "read": "Read article at Wiki",
+    "write": "Write article at Wiki",
+    "edit": "Edit article at Wiki"
+  }
+}

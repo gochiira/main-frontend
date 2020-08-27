@@ -1,0 +1,95 @@
+{
+  "site_name": "ごちイラ",
+  "langs": {
+    "en": "英語",
+    "ja": "日本語"
+  },
+  "gate": {
+    "gochiusa_official": "ごちうさ公式サイト"
+  },
+  "NavbarUp": {
+    "bar_items": {
+      "menu": "メニュー",
+      "list": "一覧",
+      "keyword": "キーワード",
+      "character": "キャラ",
+      "tag": "タグ",
+      "artist": "絵師",
+      "uploader": "投稿者",
+      "more": "もっと見る",
+      "more_tab": "更に",
+      "image": "画像",
+      "upload": "投稿"
+    },
+    "dropdown_items": {
+      "mypage": "マイページ",
+      "mylist": "マイリスト",
+      "wallet": "ウォレット",
+      "upload": "投稿",
+      "history_upload": "投稿履歴",
+      "history_search": "検索履歴",
+      "history_illust": "閲覧履歴",
+      "library": "図書室",
+      "logout": "ログアウト"
+    },
+    "smart_items": {
+      "home": "ホーム",
+      "top": "トップ",
+      "news": "ニュース",
+      "arts": "イラスト",
+      "search": "検索",
+      "user": "ユーザー",
+      "other": "その他"
+    }
+  },
+  "NavbarDown": {
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "help": "ヘルプ",
+    "links": "リンク集"
+  },
+  "NavbarDownMusic": {
+    "loading": "読込中"
+  },
+  "SearchScreen": {
+    "mute_artist": {
+      "not_muted": "この絵師をミュートする",
+      "muted": "この絵師のミュートを解除する"
+    },
+    "search_methods": {
+      "list": "一覧から検索",
+      "uploader": "投稿者から検索",
+      "tag": "タグから検索",
+      "multiple_tag": "複合タグから検索",
+      "keyword": "キーワードから検索",
+      "character": "キャラクターから検索",
+      "artist": "絵師から検索"
+    },
+    "sort": {
+      "latest_art": "投稿が新しい順",
+      "oldest_art": "投稿が古い順",
+      "most_liked": "いいね数が多い順",
+      "least_liked": "いいね数が少ない順"
+    },
+    "no_more_result": "最終ページまで読み込みました"
+  },
+  "ListScreen": {
+    "filer_keyword": "絞り込みキーワード",
+    "sort": {
+      "latest_art": "投稿が新しい順",
+      "oldest_art": "投稿が古い順",
+      "amount_many": "投稿数が多い順",
+      "amount_few": "投稿数が少ない順",
+      "most_liked": "いいね数が多い順",
+      "least_liked": "いいね数が少ない順",
+      "z_to_a": "名前降順 (Z→A)",
+      "a_to_z": "名前昇順 (A→Z)"
+    },
+    "no_more_result": "最終ページまで読み込みました"
+  },
+  "Wiki": {
+    "read": "Wikiで記事を読む",
+    "write": "Wikiで記事を書く",
+    "edit": "Wikiで記事を編集"
+  }
+}
