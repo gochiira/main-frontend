@@ -280,20 +280,21 @@
       "recieve": "受け取る",
       "recieved": "受け取り済み",
       "daily": {
-        "title": "",
-        "description": ""
+        "title": "日1ログボ",
+        "description": "1日1回必ず1PYONが貰えます"
       },
       "weekly": {
-        "title": "",
-        "description": ""
+        "title": "週1ガチャ",
+        "description": "73%で1PYON、20%で2PYON、 5%で5PYON、 2%で10PYONが出る週1ガチャ。ソシャゲ並に渋いです。"
       },
       "monthly": {
-        "title": "",
-        "description": ""
+        "title": "月1ガチャ",
+        "description": "85%で5PYON、10%で10PYON、4%で20PYON、1%で30PYONが出る月1ガチャ。ソシャゲよりも渋いです。"
       }
     },
     "transaction": {
-      "got": "獲得"
+      "get": "獲得する",
+      "got": "獲得済み"
     },
     "transaction_history": "取引履歴",
     "go_to_shop": "ショップへ行く"
