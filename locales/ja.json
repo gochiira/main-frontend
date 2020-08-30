@@ -93,13 +93,14 @@
     "edit": "Wikiで記事を編集"
   },
   "accountSettings": {
-    "account_settings": "アカウント設定",
+    "title": "アカウント設定",
     "line_connect": {
       "title": "LINE連携",
       "connect_status": {
         "connected": "連携済み",
         "not_connected": "未連携"
       },
+      "button": "連携する",
       "sentence": "LINEと既存アカウントを連携することでごちイラのユーザー名/パスワードなしにログインできるようになります。アカウントを変えた場合は上記ボタンから再連携することができます。LINE連携では、公式に提供しているLINEログインを使用します。このログインでは、識別ID(事業者別ユーザーID)の取得を行います。メッセージを勝手に送信することはありません。ごちイラの連携に関する技術的詳細は OpenID Connectの説明 を一読ください。"
     },
     "change_password": {
