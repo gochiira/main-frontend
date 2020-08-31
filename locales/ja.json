@@ -96,7 +96,7 @@
     "title": "アカウント設定",
     "line_connect": {
       "title": "LINE連携",
-      "connect_status": {
+      "status": {
         "connected": "連携済み",
         "not_connected": "未連携"
       },
@@ -110,13 +110,13 @@
         "new_password": "新しいパスワード",
         "new_password_re": "新しいパスワード(再入力)",
         "password_rule": "5文字以上50文字以下の英数字",
-        "change_button": "変更する"
+        "button": "変更する"
       },
       "notify": {
         "title": "パスワード",
         "text": {
-          "changed_password": "パスワードを変更しました",
-          "wrong_password": "パスワードが間違っています",
+          "changed": "パスワードを変更しました",
+          "wrong": "パスワードが間違っています",
           "failed": "変更できませんでした"
         }
       }
@@ -131,14 +131,14 @@
   },
   "inviteInfo": {
     "title": "招待情報",
-    "inviter": "招待者",
-    "invited_count": "招待数",
+    "inviter": "招待者:",
+    "invited_count": "招待数:",
     "invite_status": {
-      "title": "招待可否",
+      "title": "招待可否:",
       "enabled": "可",
       "disabled": "否"
     },
-    "invite_button": "招待する",
+    "button": "招待する",
     "your_invite_code": "あなたの招待コード",
     "sentence1": "この招待コードを他の人に伝えることでごちイラに新規登録してもらうことができます。",
     "sentence2": "ただし、このコードを使い招待された人がなんらかの理由でBANされた場合、あなたにも罰則が付きます。つまり、あなたがそのユーザーの保証人になります。信頼できる人のみを招待してください。"
@@ -146,7 +146,7 @@
   "notifySettings": {
     "title": "通知設定",
     "connect_status": {
-      "current": "通知状態:",
+      "title": "通知状態:",
       "connected": "設定済み",
       "not_connected": "未設定",
       "button": {
@@ -209,6 +209,10 @@
       "title": "無限スクロール",
       "description": "有効にすると、検索結果がツイッターのようにスクロールで次々出るようになります。次々出てくる分データ転送量を少し速く消費します。(つまりギガを食います)参考までに、検索結果のサムネイルは1枚辺りおよそ0.02MB(約100枚弱で1MB)です。"
     },
+    "locale": {
+      "title": "Language",
+      "description": "サイト内で使用する言語を変更します。翻訳が未完成なため、全く翻訳されないページも存在します。"
+    },
     "useRaw": {
       "title": "RAW画質",
       "description": "有効にすると、常に最高画質のイラストが表示されます。データ転送量がものすごく増え、読み込みに時間がかかるようになります。利用にはショップでの購入が必要です。"
@@ -245,9 +249,9 @@
   },
   "userInfo": {
     "title": "ユーザー情報",
-    "user_name": "ユーザー名",
-    "registered_date": "登録日",
-    "check_upload_history": "投稿履歴確認"
+    "user_name": "ユーザー名:",
+    "registered_date": "登録日:",
+    "upload_history_button": "投稿履歴確認"
   },
   "search_form": {
     "multiple": {
