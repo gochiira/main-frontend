@@ -84,11 +84,28 @@
     "help": "ヘルプ",
     "links": "リンク集"
   },
+  "NavbarSmartDown": {
+    "home": "ﾎｰﾑ",
+    "search": "検索",
+    "upload": "投稿",
+    "mylist": "ﾏｲﾘｽﾄ",
+    "settings": "設定"
+  },
   "NavbarDownMusic": {
     "loading": "読込中"
   },
   "methods": {
-    ""
+    "title": "検索方法",
+    "history": "検索履歴",
+    "methods": {
+      "keyword": "ワード",
+      "character": "キャラ",
+      "tag": "タグ",
+      "artist": "絵師",
+      "uploader": "投稿者",
+      "image": "画像",
+      "multiple_tag": "複合タグ"
+    }
   },
   "SearchScreen": {
     "mute_artist": {

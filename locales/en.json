@@ -85,8 +85,28 @@
     "help": "Help",
     "links": "Links"
   },
+  "NavbarSmartDown": {
+    "home": "Home",
+    "search": "Search",
+    "upload": "Upload",
+    "mylist": "Mylist",
+    "settings": "Settings"
+  },
   "NavbarDownMusic": {
     "loading": "Loading"
+  },
+  "methods": {
+    "title": "Search methods",
+    "history": "Search history",
+    "methods": {
+      "keyword": "Word",
+      "character": "Chara",
+      "tag": "Tag",
+      "artist": "Artist",
+      "uploader": "Uploader",
+      "image": "Image",
+      "multiple_tag": "Multiple tags"
+    }
   },
   "SearchScreen": {
     "mute_artist": {
