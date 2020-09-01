@@ -5,7 +5,43 @@
     "ja": "日本語"
   },
   "gate": {
-    "gochiusa_official": "ごちうさ公式サイト"
+    "text": {
+      "login": "ログイン",
+      "register": "新規登録",
+      "gochiusa_official": "ごちうさ公式サイト"
+    },
+    "button": {
+      "login": "ログイン",
+      "login_with_line": "LINEでログイン"
+    },
+    "mini_button": {
+      "register": "新規登録はこちら",
+      "login": "ログインはこちら",
+      "contact_us": "パスワードを忘れた場合"
+    },
+    "login_form": {
+      "user_id": "ユーザーID: ",
+      "password": "パスワード: "
+    },
+    "register_form": {
+      "display_name": "表示名(日本語可)",
+      "user_id": "ログインID(英数字)",
+      "password": "パスワード(英数字)",
+      "password_re": "パスワード(再入力)",
+      "invite_code": "招待コード",
+      "agree_tos": "利用規約に同意する"
+    },
+    "notify": {
+      "login_steps": {
+        "title": "ログイン",
+        "authorizating": "認証中",
+        "authorize_failed": "認証に失敗しました",
+        "loading_shop": "ショップ読込中",
+        "loading_mylist": "マイリスト読込中",
+        "loading_mute": "ミュート読込中",
+        "load_complete": "準備完了"
+      }
+    }
   },
   "NavbarUp": {
     "bar_items": {
@@ -50,6 +86,9 @@
   },
   "NavbarDownMusic": {
     "loading": "読込中"
+  },
+  "methods": {
+    ""
   },
   "SearchScreen": {
     "mute_artist": {
@@ -281,9 +320,9 @@
     "bonus": {
       "title": "ボーナス",
       "description": "もっと稼ぎたい? ならボーナスガチャを回しましょう!",
-      "next_recievable": "次回受取可能日",
-      "recieve": "受け取る",
-      "recieved": "受け取り済み",
+      "next_receivable": "次回受取可能日",
+      "receive": "受け取る",
+      "received": "受け取り済み",
       "daily": {
         "title": "日1ログボ",
         "description": "1日1回必ず1PYONが貰えます"
@@ -297,11 +336,10 @@
         "description": "85%で5PYON、10%で10PYON、4%で20PYON、1%で30PYONが出る月1ガチャ。ソシャゲよりも渋いです。"
       }
     },
-    "transaction": {
-      "get": "獲得する",
-      "got": "獲得済み"
+    "transaction_history": {
+      "title": "取引履歴",
+      "get": "獲得"
     },
-    "transaction_history": "取引履歴",
     "go_to_shop": "ショップへ行く"
   },
   "shop": {
@@ -316,7 +354,7 @@
     },
     "buy": "購入する",
     "bought": "購入済み",
-    "not_enough_pyon": "残高不足",
+    "not_enough": "残高不足",
     "products": {
       "TagEditor": "他のユーザーのイラストのタグを編集できるようにします",
       "WikiWriter": "キャラ、タグ、絵師の説明ページを編集できるようにします"

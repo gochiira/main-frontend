@@ -9,7 +9,7 @@
         <div class="container">
           <div class="navbar-brand">
             <nuxt-link to="/" class="navbar-item has-text-white" style="font-weight:bold;">
-              ごちイラ
+              {{ $t('site_name') }}
             </nuxt-link>
             <span class="navbar-burger burger has-text-white" :class="{ 'is-active': openMenu }" data-target="navMenu" @click="openMenu = !openMenu">
               <span />
@@ -26,7 +26,7 @@
                       <span class="icon">
                         <Fas i="home" />
                       </span>
-                      <span>ごちうさ公式サイト</span>
+                      <span>{{ $t('gate.text.gochiusa_official') }}</span>
                     </a>
                   </p>
                 </div>

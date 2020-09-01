@@ -5,7 +5,44 @@
     "ja": "Japanese"
   },
   "gate": {
-    "gochiusa_official": "Gochiusa Official"
+    "text": {
+      "login": "Login",
+      "register": "Register",
+      "gochiusa_official": "Gochiusa Official"
+    },
+    "button": {
+      "register": "Register",
+      "login": "Login",
+      "login_with_line": "Login with LINE"
+    },
+    "mini_button": {
+      "register": "Register",
+      "login": "Log in",
+      "contact_us": "Contact us"
+    },
+    "login_form": {
+      "user_id": "UserID: ",
+      "password": "Password: "
+    },
+    "register_form": {
+      "user_name": "Display Name",
+      "user_id": "UserID (alphanumeric)",
+      "password": "Password (alphanumeric)",
+      "password_re": "Password (Retype)",
+      "invite_code": "Invite code",
+      "agree_tos": "I agree to ToS"
+    },
+    "notify": {
+      "login_steps": {
+        "title": "Login",
+        "authorizating": "Authorizating...",
+        "authorize_failed": "Failed to login!",
+        "loading_shop": "Loading shop products...",
+        "loading_mylist": "Loading mylist contents...",
+        "loading_mute": "Loading muted ids...",
+        "load_complete": "Load completed"
+      }
+    }
   },
   "NavbarUp": {
     "bar_items": {
@@ -277,13 +314,13 @@
     }
   },
   "wallet": {
-    "having": "所持: ",
+    "having": "You have ",
     "bonus": {
-      "title": "ボーナス",
-      "description": "もっと稼ぎたい? ならボーナスガチャを回しましょう!",
-      "next_recievable": "次回受取可能日",
-      "recieve": "受け取る",
-      "recieved": "受け取り済み",
+      "title": "Bonus",
+      "description": "Need more PYON? You can get by rolling Gacha!",
+      "next_receivable": "Next receivable date: ",
+      "receive": "Receive",
+      "received": "Received",
       "daily": {
         "title": "日1ログボ",
         "description": "1日1回必ず1PYONが貰えます"
@@ -297,26 +334,25 @@
         "description": "85%で5PYON、10%で10PYON、4%で20PYON、1%で30PYONが出る月1ガチャ。ソシャゲよりも渋いです。"
       }
     },
-    "transaction": {
-      "get": "獲得する",
-      "got": "獲得済み"
+    "transaction_history": {
+      "title": "Transaction history",
+      "get": "got"
     },
-    "transaction_history": "取引履歴",
-    "go_to_shop": "ショップへ行く"
+    "go_to_shop": "Go to shop"
   },
   "shop": {
-    "title": "ショップ",
-    "description": "イラストを登録することにより、PYONと呼ばれる特別なボーナスポイントを獲得できます。 これは、このサイトの情報量を高め、より検索エンジンとしてふさわしい状態を保つのに協力した方々への報酬であり、 PYONを交換することで閲覧をより快適にすることができます。 PYONはイラスト投稿の他に デイリーボーナスで入手することもできます。",
-    "currently_have": "あなたは現在 {0} PYON を所持しています。",
+    "title": "Shop",
+    "description": "You can get PYON with daily login, or uploading gochiusa arts. PYON means thanks from admin for your support to keeps gochiira updated. PYON can be traded to cool features useable in this website.",
+    "currently_have": "You currently have {0} PYON.",
     "table_head": {
-      "product": "商品",
-      "description": "説明",
-      "price": "価格",
-      "transaction": "取引"
+      "product": "Product",
+      "description": "Description",
+      "price": "Price",
+      "transaction": "Transaction"
     },
-    "purchase": "購入する",
-    "bought": "購入済み",
-    "not_enough_pyon": "残高不足",
+    "purchase": "Purchase",
+    "bought": "Purchased",
+    "not_enough": "Not enough",
     "products": {
       "TagEditor": "他のユーザーのイラストのタグを編集できるようにします",
       "WikiWriter": "キャラ、タグ、絵師の説明ページを編集できるようにします"
