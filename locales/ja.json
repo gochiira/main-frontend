@@ -391,5 +391,14 @@
       "announce": "告知",
       "important": "重要"
     }
+  },
+  "search_image": {
+    "title": "画像検索",
+    "description": "画像を選ぶとごちイラのDBから検索します。存在しない場合はSauceNAOから検索します。※JPGかJPEGかPNGのみ対応です",
+    "select_image": "画像を選択...",
+    "drop_image": "ドロップで画像検索",
+    "searching_gochiira": "ごちイラで検索中...",
+    "searching_saucenao": "SauceNaoで検索中...",
+    "hash_value": "ハッシュ値: "
   }
 }

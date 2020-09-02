@@ -60,7 +60,7 @@
     },
     "dropdown_items": {
       "mypage": "Profile",
-      "mylist": "Bookmark",
+      "mylist": "Mylist",
       "wallet": "Wallet",
       "upload": "Upload",
       "history_upload": "Upload history",
@@ -392,5 +392,14 @@
       "announce": "Announce",
       "important": "Important"
     }
+  },
+  "search_image": {
+    "title": "Image Search",
+    "description": "After select image, it searches from gochiira database. If not found, it also searches with SauceNAO. (Supported formats: JPG, JPEG, and PNG)",
+    "select_image": "Select image...",
+    "drop_image": "Drop to search",
+    "searching_gochiira": "Searching with Gochiira...",
+    "searching_saucenao": "Searching with SauceNao...",
+    "hash_value": "Hash: "
   }
 }
