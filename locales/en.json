@@ -313,23 +313,23 @@
   "search_form": {
     "multiple": {
       "tag": {
-        "title": "複合タグ検索",
-        "target_tags": "検索対象タグ (5つまで)",
-        "select_tags": "タグを選択してください",
-        "options_tags": "タグ候補 (2文字以上)",
-        "and_or": "AND検索 / OR検索",
-        "search_button": "検索する",
+        "title": "Multiple tag search",
+        "target": "Target tags (Max length: 5)",
+        "select": "Please select tags",
+        "options": "Input tag name to search (Min length: 2)",
+        "and_or": "AND search / OR search",
+        "search_button": "Search",
         "notify": {
-          "no_match": "一致する項目がありませんでした"
+          "no_match": "No matched results found"
         }
       }
     },
     "keyword": {
-      "title": "キーワード検索",
-      "input_keyword": "検索したいキーワードを入力してください",
-      "search_button": "検索する",
+      "title": "Keyword Search",
+      "description": "Input keyword to search.",
+      "search_button": "Search",
       "notify": {
-        "no_match": "一致する項目がありませんでした"
+        "no_match": "No matched results found"
       }
     }
   },
@@ -376,6 +376,21 @@
     "products": {
       "TagEditor": "他のユーザーのイラストのタグを編集できるようにします",
       "WikiWriter": "キャラ、タグ、絵師の説明ページを編集できるようにします"
+    }
+  },
+  "news": {
+    "title": "News",
+    "table_head": {
+      "type": "Type",
+      "title": "Title",
+      "date": "Date"
+    },
+    "types": {
+      "info": "Info",
+      "memo": "Memo",
+      "update": "Update",
+      "announce": "Announce",
+      "important": "Important"
     }
   }
 }

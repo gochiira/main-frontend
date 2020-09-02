@@ -301,7 +301,7 @@
     "usage_percent": "ストレージ使用割合:",
     "usage_bytes":  "ストレージ使用量(概算値):",
     "useable_bytes": "利用可能容量(概算値):",
-    "delete_temporary_data": "一時データ削除"
+    "delete_button": "一時データ削除"
   },
   "userInfo": {
     "title": "ユーザー情報",
@@ -313,9 +313,9 @@
     "multiple": {
       "tag": {
         "title": "複合タグ検索",
-        "target_tags": "検索対象タグ (5つまで)",
-        "select_tags": "タグを選択してください",
-        "options_tags": "タグ候補 (2文字以上)",
+        "target": "検索対象タグ (5つまで)",
+        "select": "タグを選択してください",
+        "options": "タグ候補 (2文字以上)",
         "and_or": "AND検索 / OR検索",
         "search_button": "検索する",
         "notify": {
@@ -325,7 +325,7 @@
     },
     "keyword": {
       "title": "キーワード検索",
-      "input_keyword": "検索したいキーワードを入力してください",
+      "description": "検索したいキーワードを入力してください",
       "search_button": "検索する",
       "notify": {
         "no_match": "一致する項目がありませんでした"
@@ -375,6 +375,21 @@
     "products": {
       "TagEditor": "他のユーザーのイラストのタグを編集できるようにします",
       "WikiWriter": "キャラ、タグ、絵師の説明ページを編集できるようにします"
+    }
+  },
+  "news": {
+    "title": "ニュース",
+    "table_head": {
+      "type": "種別",
+      "title": "タイトル",
+      "date": "日付"
+    },
+    "types": {
+      "info": "お知らせ",
+      "memo": "メモ",
+      "update": "アプデ",
+      "announce": "告知",
+      "important": "重要"
     }
   }
 }
