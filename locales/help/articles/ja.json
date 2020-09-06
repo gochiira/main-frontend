@@ -1,0 +1,120 @@
+{
+    "what-is-gcir": {
+        "title": "ごちイラとは?",
+        "body": [
+            "ごちイラは、様々なサイトに点在するごちうさイラストを一括で検索できる、完全無料のごちうさイラスト専用のまとめサイトです。",
+            "まとめ、と言っても某2chまとめブログ等とは目的が異なり、金銭を得られる広告やWebマイニングシステムはサイト内に一切存在しません。",
+            "運営者は誰が描いたかわからない転載を無くしたい、ありとあらゆるチノちゃんを見たい・永久に保管したい・追い続けたいという目的で非営利で運営しています。",
+            "そのため、記載されているイラストは全てごちイラサーバーに保管されていますが、すべてのイラストは出典が確実にわかる形となっています。",
+            "保管といっても、検索ができなければ見返すことができない単なる画像ファイルの山です。そこで、ごちイラはタグ、出典元、画像サイズ情報などの出典元を特定するために必要な情報を可能な限り多く付与して検索機能の向上を目指しています。機能が充実しており、一般のサイトと勘違いされるかもしれませんがここはあくまでも非公開の場です。絵師さんを支援するためには、直接いいね/RT/同人誌購入をしにいってください。"
+        ]
+    },
+    "is-gcir-free": {
+        "title": "ごちイラは無料で使えますか?",
+        "body": []
+    },
+    "why-invite-only": {
+        "title":"ごちイラはなぜ招待制なのですか?",
+        "body": []
+    },
+    "dmca-request": {
+        "title":"ごちイラに記載されたくないイラストがある",
+        "body": []
+    },
+    "publish-on-other-sites": {
+        "title": "ブログやSNS等へのごちイラの掲載に関して",
+        "body": []
+    },
+    "not-working": {
+        "title": "サイトの動作がおかしいです",
+        "body": []
+    },
+    "recommended-requirements": {
+        "title": "推奨環境を教えて下さい",
+        "body": []
+    },
+    "can-i-use-from-features": {
+        "title": "フィーチャーフォンからごちイラは利用できますか?",
+        "body": []
+    },
+    "works-too-slow": {
+        "title": "動作がとても遅いです",
+        "body": []
+    },
+    "not-smart-display": {
+        "title": "スマホ版が表示されません",
+        "body": []
+    },
+    "how-to-register": {
+        "title": "ごちイラにはどうすれば登録できますか?",
+        "body": []
+    },
+    "does-minor-can-use": {
+        "title": "18歳未満はごちイラを利用できませんか?",
+        "body": []
+    },
+    "what-is-uid": {
+        "title": "ユーザーIDとは?",
+        "body": []
+    },
+    "how-to-get-uid":{
+        "title": "ユーザーIDはどのように取得できますか?",
+        "body": []
+    },
+    "how-to-change-uid":{
+        "title": "ユーザーIDを変更したいです",
+        "body": []
+    },
+    "how-to-change-password":{
+        "title": "パスワードを変更したいです",
+        "body": []
+    },
+    "forgot-uid":{
+        "title": "ユーザーIDを忘れてしまいました",
+        "body": []
+    },
+    "forgot-password-logined":{
+        "title": "パスワードを忘れてしまいました(ログイン済み)",
+        "body": []
+    },
+    "forgot-password-logouted":{
+        "title": "パスワードを紛失してしまいました(未ログイン)",
+        "body": []
+    },
+    "can-I-use-after-upgraded":{
+        "title": "スマホを機種変更してもごちイラは使えますか?",
+        "body": []
+    },
+    "how-to-logout":{
+        "title": "ログアウトするには?",
+        "body": []
+    },
+    "what-is-mute":{
+        "title": "ミュートとは?",
+        "body": []
+    },
+    "maximum-mutes-exceeded":{
+        "title": "ミュート数の上限に達していますと表示されました",
+        "body": []
+    },
+    "what-is-multiple-tag-search":{
+        "title": "複合タグ検索とは?",
+        "body": []
+    },
+    "what-is-image-search":{
+        "title": "画像検索とは?",
+        "body": []
+    },
+    "what-can-i-upload":{
+        "title": "何を投稿できますか?",
+        "body": []
+    },
+    "upload-guidelines":{
+        "title": "投稿ガイドライン",
+        "body": []
+    },
+    "what-is-r-18":{
+        "title": "年齢制限(R18)とはなんですか",
+        "body": []
+    }
+}
