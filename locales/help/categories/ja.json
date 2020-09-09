@@ -5,5 +5,18 @@
     "register": "新規登録について",
     "id-password-login": "ID/パスワード/ログインについて",
     "about-search": "作品の検索について",
-    "about-upload": "投稿について"
+    "about-upload": "投稿について",
+    "about-pyon": "PYONについて",
+    "about-likes": "いいねについて",
+    "about-bookmarks": "ブックマークについて",
+    "about-notifies": "通知について",
+    "about-translations": "翻訳の提案について",
+    "about-cancel-account": "退会について",
+    "about-securities": "セキュリティについて",
+    "about-sources": "出典について",
+    "about-bots": "Botについて",
+    "about-pwa": "PWAについて",
+    "about-usagi-player": "UsagiPlayerについて",
+    "related-services": "関連サービスについて",
+    "for-developers": "開発者の方へ"
 }
