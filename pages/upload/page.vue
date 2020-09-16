@@ -29,7 +29,7 @@
                 >
               </div>
               <p class="help">
-                対応サイト: twitter.com pixiv.net seiga.nicovideo.jp danbooru.donmai.us
+                対応サイト: twitter.com pixiv.net seiga.nicovideo.jp booth.pm danbooru.donmai.us
               </p>
             </div>
             <br>
@@ -96,7 +96,8 @@ export default {
             link.includes('twitter.com') ||
             link.includes('pixiv.net') ||
             link.includes('seiga.nicovideo.jp') ||
-            link.includes('danbooru')
+            link.includes('danbooru') ||
+            link.includes('booth.pm')
           )
         )[0]
       }
