@@ -3,10 +3,9 @@
     <div class="container is-widescreen">
       <div class="columns is-centered is-vcentered is-multiline">
         <div class="column is-8">
-          <Notification
-            icon="info"
-            :title="$auth.user.name+' さんのイラスト閲覧履歴 (' + $store.state.user.illustHistory.length + '件)'"
-          />
+          <Notification icon="info">
+            {{ $auth.user.name+' さんのイラスト閲覧履歴 (' + $store.state.user.illustHistory.length + '件)' }}
+          </Notification>
         </div>
       </div>
       <div class="columns is-centered is-multiline is-mobile">
