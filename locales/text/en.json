@@ -401,5 +401,16 @@
     "searching_gochiira": "Searching with Gochiira...",
     "searching_saucenao": "Searching with SauceNao...",
     "hash_value": "Hash: "
+  },
+  "rankings": {
+    "title": "Ranking list",
+    "methods": {
+      "monthly_like": "Monthly like ranking",
+      "monthly_view": "Monthly view ranking",
+      "weekly_like": "Weekly like ranking",
+      "weekly_view": "Weekly view ranking",
+      "daily_like": "Daily like ranking",
+      "daily_view": "Daily view ranking"
+    }
   }
 }

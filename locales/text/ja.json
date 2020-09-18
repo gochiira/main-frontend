@@ -47,12 +47,13 @@
     "bar_items": {
       "menu": "メニュー",
       "list": "一覧",
+      "ranking": "ランキング",
       "keyword": "キーワード",
       "character": "キャラ",
       "tag": "タグ",
       "artist": "絵師",
       "uploader": "投稿者",
-      "more": "もっと見る",
+      "more": "もっと",
       "more_tab": "更に",
       "image": "画像",
       "upload": "投稿"
@@ -98,6 +99,7 @@
     "title": "検索方法",
     "history": "検索履歴",
     "methods": {
+      "ranking": "ランキング",
       "keyword": "ワード",
       "character": "キャラ",
       "tag": "タグ",
@@ -400,5 +402,16 @@
     "searching_gochiira": "ごちイラで検索中...",
     "searching_saucenao": "SauceNaoで検索中...",
     "hash_value": "ハッシュ値: "
+  },
+  "rankings": {
+    "title": "ランキング一覧",
+    "methods": {
+      "monthly_like": "月間いいね数ランキング",
+      "monthly_view": "月間閲覧数ランキング",
+      "weekly_like": "週間いいね数ランキング",
+      "weekly_view": "週間閲覧数ランキング",
+      "daily_like": "日間いいね数ランキング",
+      "daily_view": "日間閲覧数ランキング"
+    }
   }
 }
