@@ -12,7 +12,8 @@
     },
     "button": {
       "login": "ログイン",
-      "login_with_line": "LINEでログイン"
+      "login_with_line": "LINEでログイン",
+      "register": "新規登録"
     },
     "mini_button": {
       "register": "新規登録はこちら",
@@ -24,7 +25,7 @@
       "password": "パスワード: "
     },
     "register_form": {
-      "display_name": "表示名(日本語可)",
+      "user_name": "表示名(日本語可)",
       "user_id": "ログインID(英数字)",
       "password": "パスワード(英数字)",
       "password_re": "パスワード(再入力)",
