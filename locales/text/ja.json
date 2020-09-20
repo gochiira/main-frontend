@@ -127,12 +127,20 @@
     "sort": {
       "latest_art": "投稿が新しい順",
       "oldest_art": "投稿が古い順",
-      "most_viewd": "閲覧数が多い順",
+      "most_viewed": "閲覧数が多い順",
       "least_viewed": "閲覧数が少ない順",
       "most_liked": "いいね数が多い順",
-      "least_liked": "いいね数が少ない順"
+      "least_liked": "いいね数が少ない順",
+      "latest_mylist": "マイリスト登録日が新しい順",
+      "oldest_mylist": "マイリスト登録日が古い順"
     },
     "no_more_result": "最終ページまで読み込みました"
+  },
+  "UtilArea": {
+    "toggle_notify": "通知切替",
+    "toggle_show": "表示切替",
+    "show_article": "記事閲覧",
+    "edit_article": "記事編集"
   },
   "RankingScreen": {
     "title": "ランキング",
@@ -142,7 +150,9 @@
       "monthly": "月間",
       "weekly": "週間",
       "daily": "日間"
-    }
+    },
+    "like_count": "いいね数",
+    "view_count": "閲覧数"
   },
   "ListScreen": {
     "filer_keyword": "絞り込みキーワード",
@@ -442,6 +452,27 @@
       "weekly_view": "週間閲覧数ランキング",
       "daily_like": "日間いいね数ランキング",
       "daily_view": "日間閲覧数ランキング"
+    }
+  },
+  "upload_by_page": {
+    "title": "ページから投稿",
+    "description": "指定されたサイトから情報およびイラストを取得し投稿を行います。",
+    "page_url": "情報取得元URL(共有用アドレス)",
+    "supported_sites": "対応サイト: twitter.com pixiv.net seiga.nicovideo.jp booth.pm danbooru.donmai.us",
+    "buttons": {
+      "go_to_input": "情報入力画面へ",
+      "upload_by_image": "画像から投稿する場合",
+      "upload_history": "投稿履歴を見る"
+    }
+  },
+  "upload_by_image": {
+    "title": "画像から投稿",
+    "description": "主に公式のイラストを投稿するのを想定しています。Pixiv/Twitterに存在するファンアートはURLから登録してください。",
+    "supported_extensions": "対応拡張子: JPG/JPEG/PNG",
+    "buttons": {
+      "select_image": "画像を選択",
+      "upload_by_page": "ページから投稿する場合",
+      "upload_history": "投稿履歴を見る"
     }
   }
 }

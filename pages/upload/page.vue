@@ -4,14 +4,16 @@
       <div class="columns is-centered is-vcentered" style="min-height:70vh">
         <div class="column is-7 has-text-centered">
           <h4 class="title">
-            ページからイラスト投稿
+            {{ $t('upload_by_page.title') }}
           </h4>
           <p>
-            指定されたサイトから情報およびイラストを取得し投稿を行います。
+            {{ $t('upload_by_page.description') }}
+          </p>
+          <p>
             <b>
               投稿前には必ず
-              <nuxt-link to="/rules/illust">
-                イラスト投稿ルール
+              <nuxt-link to="/help/articles/upload-guidelines">
+                イラスト投稿ガイドライン / Upload guidelines
               </nuxt-link>
               をご確認ください!
             </b>
@@ -19,7 +21,7 @@
           <br>
           <div v-show="!scrapeInfo.scraped">
             <div class="field">
-              <label class="label">情報取得元URL(共有用アドレス)</label>
+              <label class="label">{{ $t('upload_by_page.page_url') }}</label>
               <div class="control">
                 <input
                   v-model="scrapeInfo.url"
@@ -29,25 +31,25 @@
                 >
               </div>
               <p class="help">
-                対応サイト: twitter.com pixiv.net seiga.nicovideo.jp booth.pm danbooru.donmai.us
+                {{ $t('upload_by_page.supported_sites') }}
               </p>
             </div>
             <br>
             <div class="field is-centered">
               <button class="button is-primary is-fullwidth is-large" :disabled="!scrapeInfo.url" @click="getArtInfo">
-                情報入力画面へ
+                {{ $t('upload_by_page.buttons.go_to_input') }}
               </button>
             </div>
             <br>
             <br>
             <div class="field is-centered">
               <nuxt-link to="/upload/image" class="button is-primary is-medium">
-                画像から投稿する場合はこちら
+                {{ $t('upload_by_page.buttons.upload_by_image') }}
               </nuxt-link>
             </div>
             <div class="field is-centered">
               <nuxt-link to="/history/upload" class="button is-primary is-medium">
-                投稿履歴の確認はこちら
+                {{ $t('upload_by_page.buttons.upload_history') }}
               </nuxt-link>
             </div>
           </div>

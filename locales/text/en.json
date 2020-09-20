@@ -100,8 +100,9 @@
     "title": "Search methods",
     "history": "Search history",
     "methods": {
+      "ranking": "Ranking",
       "keyword": "Word",
-      "character": "Chara",
+      "character": "Character",
       "tag": "Tag",
       "artist": "Artist",
       "uploader": "Uploader",
@@ -129,9 +130,17 @@
       "most_viewed": "Most viewed",
       "least_viewed": "Least viewed",
       "most_liked": "Most liked",
-      "least_liked": "Least liked"
+      "least_liked": "Least liked",
+      "latest_mylist": "Latest mylisted",
+      "oldest_mylist": "Oldest mylisted"
     },
     "no_more_result": "You read all results"
+  },
+  "UtilArea": {
+    "toggle_notify": "Notify",
+    "toggle_show": "Hide",
+    "show_article": "Show wiki",
+    "edit_article": "Edit wiki"
   },
   "RankingScreen": {
     "title": "Ranking",
@@ -141,7 +150,9 @@
       "monthly": "Monthly",
       "weekly": "Weekly",
       "daily": "Daily"
-    }
+    },
+    "like_count": "Likes",
+    "view_count": "Views"
   },
   "ListScreen": {
     "filer_keyword": "Filter: ex.香風智乃",
@@ -441,6 +452,27 @@
       "weekly_view": "Weekly view ranking",
       "daily_like": "Daily like ranking",
       "daily_view": "Daily view ranking"
+    }
+  },
+  "upload_by_page": {
+    "title": "Upload by page",
+    "description": "Get image and infos from specified page and upload.",
+    "page_url": "Source Url (Share url)",
+    "supported_sites": "Supported sites: twitter.com pixiv.net seiga.nicovideo.jp booth.pm danbooru.donmai.us",
+    "buttons": {
+      "go_to_input": "Go to info input",
+      "upload_by_image": "If you want to upload by image",
+      "upload_history": "Go to upload history"
+    }
+  },
+  "upload_by_image": {
+    "title": "Upload by image",
+    "description": "This feature is available especially for uploading official arts. If upload by page feature supports, please use upload by page.",
+    "supported_extensions": "Supported extensions: JPG/JPEG/PNG",
+    "buttons": {
+      "select_image": "Select image",
+      "upload_by_page": "If you want to upload by page",
+      "upload_history": "Go to upload history"
     }
   }
 }
