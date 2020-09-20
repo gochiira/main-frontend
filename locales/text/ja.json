@@ -127,10 +127,22 @@
     "sort": {
       "latest_art": "投稿が新しい順",
       "oldest_art": "投稿が古い順",
+      "most_viewd": "閲覧数が多い順",
+      "least_viewed": "閲覧数が少ない順",
       "most_liked": "いいね数が多い順",
       "least_liked": "いいね数が少ない順"
     },
     "no_more_result": "最終ページまで読み込みました"
+  },
+  "RankingScreen": {
+    "title": "ランキング",
+    "note": "※期間中に集計したいいね/閲覧数を表示しています。未実装なため過去のランキングは閲覧できません。",
+    "not_found": "指定した期間のランキング情報が見つけられませんでした",
+    "sort": {
+      "monthly": "月間",
+      "weekly": "週間",
+      "daily": "日間"
+    }
   },
   "ListScreen": {
     "filer_keyword": "絞り込みキーワード",
@@ -403,6 +415,23 @@
     "searching_gochiira": "ごちイラで検索中...",
     "searching_saucenao": "SauceNaoで検索中...",
     "hash_value": "ハッシュ値: "
+  },
+  "help": {
+    "title": "何かお困りですか?",
+    "frequently": {
+      "title": "たぶんすごくよくある質問",
+      "articles": {
+        "forgot-password-logouted": "パスワードを忘れました"
+      }
+    },
+    "survey": {
+      "title": "この記事はお役に立ちましたか?",
+      "helped": "{0}名の方が役に立ったと言っています",
+      "not_helped": "{0}名の方が役に立たなかったと言っています",
+      "yes": "役に立った",
+      "no": "役に立たなかった"
+    },
+    "back": "戻る"
   },
   "rankings": {
     "title": "ランキング一覧",

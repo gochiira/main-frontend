@@ -11,9 +11,9 @@
       "gochiusa_official": "Gochiusa Official"
     },
     "button": {
-      "register": "Register",
       "login": "Login",
-      "login_with_line": "Login with LINE"
+      "login_with_line": "Login with LINE",
+      "register": "Register"
     },
     "mini_button": {
       "register": "Register",
@@ -48,6 +48,7 @@
     "bar_items": {
       "menu": "Menu",
       "list": "All",
+      "ranking": "Ranking",
       "keyword": "Keyword",
       "character": "Character",
       "tag": "Tag",
@@ -125,10 +126,22 @@
     "sort": {
       "latest_art": "Latest",
       "oldest_art": "Oldest",
+      "most_viewed": "Most viewed",
+      "least_viewed": "Least viewed",
       "most_liked": "Most liked",
       "least_liked": "Least liked"
     },
     "no_more_result": "You read all results"
+  },
+  "RankingScreen": {
+    "title": "Ranking",
+    "note": "Likes and views shown at this page are calcurated from ranking data. Old rankings are not yet implemented, sorry.",
+    "not_found": "No ranking data found at specified period",
+    "sort": {
+      "monthly": "Monthly",
+      "weekly": "Weekly",
+      "daily": "Daily"
+    }
   },
   "ListScreen": {
     "filer_keyword": "Filter: ex.香風智乃",
@@ -401,6 +414,23 @@
     "searching_gochiira": "Searching with Gochiira...",
     "searching_saucenao": "Searching with SauceNao...",
     "hash_value": "Hash: "
+  },
+  "help": {
+    "title": "How can I help you?",
+    "frequently": {
+      "title": "Really frequently asked questions:",
+      "articles": {
+        "forgot-password-logouted": "I forgot password!"
+      }
+    },
+    "survey": {
+      "title": "Did this article help you?",
+      "helped": "{0} people saids it did.",
+      "not_helped": "{0} people saids it didn't.",
+      "yes": "It helped me",
+      "no": "It didn't helped me"
+    },
+    "back": "Back"
   },
   "rankings": {
     "title": "Ranking list",
