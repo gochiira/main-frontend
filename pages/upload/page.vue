@@ -89,7 +89,7 @@ export default {
       // URLパラメータ除去
       url = url.split('?')[0]
       // OriginURLとimageUrlを正規表現で切り出す
-      const possibleLinks = url.match('https?://[\x21-\x7e]+')
+      const possibleLinks = url.match('https?://[\x21-\x7E]+')
       if (possibleLinks) {
         this.scrapeInfo.url = possibleLinks.filter(
           link => (
