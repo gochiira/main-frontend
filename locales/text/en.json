@@ -179,10 +179,18 @@
       "title": "LINE Connect",
       "status": {
         "connected": "Connected",
-        "not_connected": "Not conneted"
+        "not_connected": "Not connected"
       },
       "button": "Connect",
-      "sentence": "By connecting your LINE account to gochiisa account, you can login without using username and password. If you changed line account, you can reconnect by tapping the button again. LINE connect uses LINE Login API provided from LINE Official. Gochiira uses only Identify ID of your LINE account. We won't send any message by this feature. To know how it works, You can search 'OpenID Connect' on google."
+      "sentence": "By connecting your LINE account to gochiira account, you can login without using username and password. If you changed line account, you can reconnect by tapping the button again. LINE connect uses LINE Login API provided from LINE Official. Gochiira uses only Identify ID of your LINE account. We won't send any message by this feature. To know how it works, You can search 'OpenID Connect' on google."
+    },
+    "telegram_connect": {
+      "title": "Telegram Connect",
+      "status": {
+        "connected": "Connected",
+        "not_connected": "Not connected"
+      },
+      "sentence": "By connecting your Telegram account to gochiira account, you can login gochiira with Telegram. You can reconnect if you changed telegram account. This feature uses Telegram login widget. The method can get your fullname, userID, and userName. But we stores and uses only your userID."
     },
     "change_password": {
       "title": "Change password",
