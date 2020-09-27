@@ -25,9 +25,9 @@
       "password": "Password: "
     },
     "register_form": {
-      "user_name": "Display Name",
-      "user_id": "UserID (alphanumeric)",
-      "password": "Password (alphanumeric)",
+      "user_name": "Display Name(4~20)",
+      "user_id": "UserID (alphanumeric 4~20)",
+      "password": "Password (alphanumeric 8~20)",
       "password_re": "Password (Retype)",
       "invite_code": "Invite code",
       "agree_tos": "I agree to ToS"

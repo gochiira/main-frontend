@@ -25,9 +25,9 @@
       "password": "パスワード: "
     },
     "register_form": {
-      "user_name": "表示名(日本語可)",
-      "user_id": "ログインID(英数字)",
-      "password": "パスワード(英数字)",
+      "user_name": "表示名(日本語可 4~20字)",
+      "user_id": "ログインID(英数字 4~20字)",
+      "password": "パスワード(英数字 8~20字)",
       "password_re": "パスワード(再入力)",
       "invite_code": "招待コード",
       "agree_tos": "利用規約に同意する"
