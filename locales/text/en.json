@@ -278,6 +278,10 @@
       "title": "Swipe style menu",
       "description": "If enabled, menus will appear when you swipe. Don't enable on iOS, since this will disturb system navigation."
     },
+    "useFixed": {
+      "title": "Top menu",
+      "description": "If enabled, logo and hamburger button keeps showing at top. Disable if your phone screen is small."
+    },
     "useBottom": {
       "title": "Bottom menu",
       "description": "If enabled, shortcuts will appear on bottom. Disable if your phone screen is small."
