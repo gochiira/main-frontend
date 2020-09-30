@@ -260,6 +260,45 @@
       "sentence": "This will be able to send notify via DM on Twitter. Sorry, this is not yet implemented."
     }
   },
+  "ipfsSettings": {
+    "title": "IPFS Settings",
+    "about": {
+      "title": "What is IPFS?",
+      "sentence": "IPFS is InterPlanetary File System.",
+      "sentence2": "The system shares unused storage using P2P. By it, otherone can put file to the your unused-storage, and you can put your file to otherone's unused-storage.",
+      "sentence3": "With this system, we can spread the file to many places, and we can keep file as long as they can.",
+      "sentence4": "At this site, We try to keep gochiusa illusts as far as forever with it. To know more about IPFS, you can search at Google."
+    },
+    "use": {
+      "title": "Toggle IPFS uses (NYI)",
+      "sentence": "IPFSネットワークを利用することで、なんと応答が0.02秒も速くなり、あなたにメリットがある他、ファイルが人気であることをIPFSネットワーク上に通達することで、より長くごちうさイラストを保管することに繋がります。更に、ごちイラのオリジンサーバーへの直接のリクエストが減少するためとても管理者が助かります。ぜひとも有効なままにしておいていただきたいのですが、どうしてもIPFSが嫌いであればこちらのチェックボックス全てをチェックすると無効化できます。",
+      "checkbox": [
+        "IPFSネットワークを拒む",
+        "IPFSネットワークが嫌いだ",
+        "IPFSネットワークを拒否する",
+        "IPFSネットワークに異論がある",
+        "IPFSネットワークを固く禁じる",
+        "IPFSネットワークを維持したくない",
+        "IPFSネットワークを使用したくない",
+        "IPFSネットワークを絶対に使いたくない",
+        "IPFSネットワークをどうしても使いたくない",
+        "IPFSネットワークを何が何でも使いたくない",
+        "私はロボットではありません",
+        "私は利用規約に同意します"
+      ],
+      "button": "IPFSネットワークを利用しない"
+    },
+    "gateway": {
+      "title": "Change IPFS Gateway (NYI)",
+      "sentence": "IPFSゲートウェイとは、IPFSネットワーク上に存在するファイルをWebブラウザ等で簡単に呼び出せるようにする仲介点のことです。これがないとIPFSネットワーク上のコンテンツにアクセスすることはできません。測定してみたところCloudflareのゲートウェイが1番安定して速かったのでおすすめです。もちろん、独自のゲートウェイもご利用になれます。",
+      "mixed_content": "ごちイラでは、HTTPSを強制しているため、LAN内のサーバーをそのまま利用しようとするとセキュリティ上の都合(ありがたいおせっかい)で、ゲートウェイへのアクセスがブロックされてしまいます。LAN内のサーバーを利用したい場合は、左上の鍵アイコンからサイトの設定を開き、安全でないコンテンツを許可にするか、リバースプロキシと自己署名証明書を使ってオレオレHTTPSを実現させてください。"
+    },
+    "copy": {
+      "title": "Change IPFS Node (NYI)",
+      "sentence": "IPFSノードをお持ちの方(既にご利用の方)は、こちらにアドレスをご入力頂くと 対象イラストの閲覧時に、イラストを自動でコピーおよびピンすることができます。もしよければご協力お願いします。",
+      "mixed_content": "ごちイラでは、HTTPSを強制しているため、LAN内のサーバーをそのまま利用しようとするとセキュリティ上の都合(ありがた迷惑)で、APIへのアクセスがブロックされてしまいます。LAN内のサーバーを利用したい場合は、左上の鍵アイコンからサイトの設定を開き、安全でないコンテンツを許可にするか、リバースプロキシと自己署名証明書を使ってオレオレHTTPSを実現させてください。"
+    }
+  },
   "siteSettings": {
     "title": "Site settings",
     "acceptR18": {
