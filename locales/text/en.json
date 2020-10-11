@@ -305,6 +305,10 @@
       "title": "Show NSFW images",
       "description": "If enabled, nsfw images will be displayed without any mosaics. ENABLE ONLY YOU ARE OVER THAN 18 AND DON'T HATE NSFW CONTENTS"
     },
+    "useTextResult": {
+      "title": "Text Result",
+      "description": "If enabled, search results will shown with title and description."
+    },
     "isPC": {
       "title": "PC version",
       "description": "If enabled, page layouts will be optimised for PC. Don't enable this on smartphones."
