@@ -1,0 +1,8 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "chino_ny_psd0",
+	"model": "chino_ny_psd0.moc",
+	"textures": [
+		"chino_ny_psd0.4096/texture_00.png"
+	]
+}
