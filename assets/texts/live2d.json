@@ -119,5 +119,9 @@
         "遅いですね",
         "遅くなりました",
         "いらっしゃいませ"
-    ]
+    ],
+    "chinoModels": {
+        "magical": "/model-chino-denchi/chino_ny_psd0.model.json",
+        "house": "/model-chino-Hernes_vr/Chino.model.json"
+    }
 }

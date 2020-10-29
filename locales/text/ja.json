@@ -382,6 +382,10 @@
     "useMusicPlayer": {
       "title": "UsagiPlayer",
       "description": "有効にすると、サイト内で音楽プレイヤーが使用できるようになります。利用にはショップでの購入が必要です。"
+    },
+    "useChinoMascot": {
+      "title": "マスコットチノ",
+      "description": "有効にすると、じっとカーソルを見てくるかわいいチノちゃんを左下に表示します。魔法少女チノはDenchi氏制作のもの(https://gcus.page.link/WSz2)、ラビハ制服チノはHernes_vr氏制作のもの(https://gcus.page.link/m9Mm)が表示されます。スマホ版ではかなり邪魔になってしまうため表示されません。利用にはショップでの購入が必要です。"
     }
   },
   "storageInfo": {

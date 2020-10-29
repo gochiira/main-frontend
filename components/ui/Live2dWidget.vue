@@ -15,7 +15,7 @@
 
 <script>
 import Fas from '@/components/ui/Fas.vue'
-import { chinoSerifu } from '~/assets/texts/live2d.json'
+import { chinoSerifu, chinoModels } from '~/assets/texts/live2d.json'
 
 export default {
   components: {
@@ -38,7 +38,12 @@ export default {
   methods: {
     initLive2D () {
       window.L2Dwidget.init({
-        model: { jsonPath: '/live2dw/model-chino-denchi/chino_ny_psd0.model.json', scale: 1, hHeadPos: 0.5, vHeadPos: 0.618 },
+        model: {
+          jsonPath: `/live2dw/${chinoModels[this.$store.state.user.useChinoMascot]}`,
+          scale: 1,
+          hHeadPos: 0.5,
+          vHeadPos: 0.618
+        },
         display: { position: 'left', width: 200, height: 340, hOffset: 40, vOffset: -80 },
         mobile: { show: false },
         react: { opacity: 1.0 },
