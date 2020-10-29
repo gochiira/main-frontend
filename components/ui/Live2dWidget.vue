@@ -1,6 +1,5 @@
 <template>
   <div id="live2d-widget-handler">
-    <script src="/live2dw/L2Dwidget.min.js" />
     <div
       class="button is-info"
       style="position: fixed; bottom: -3px; left: -3px; background-color:#955E4B;"
@@ -30,10 +29,13 @@ export default {
     }
   },
   mounted () {
+    const loader = document.createElement('script')
+    loader.setAttribute('src', '/live2dw/L2Dwidget.min.js')
+    document.body.appendChild(loader)
     const self = this
     setTimeout(function () {
       self.initLive2D()
-    }, 1500)
+    }, 4000)
   },
   methods: {
     initLive2D () {
