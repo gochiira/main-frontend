@@ -47,5 +47,3 @@ jobs:
           tags: |
             ghcr.io/gochiira/${{ env.IMAGE_NAME }}:latest
             ghcr.io/gochiira/${{ env.IMAGE_NAME }}:${{ github.run_number }}
-          cache-from: type=registry,ref=ghcr.io/gochiira/${{ env.IMAGE_NAME }}:latest
-          cache-to: type=inline,mode=max
