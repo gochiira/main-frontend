@@ -491,6 +491,7 @@
 <script>
 import Vue from 'vue'
 import Viewer from 'v-viewer'
+import vuescroll from 'vue-scroll'
 import debounce from 'lodash/debounce'
 import axios from 'axios'
 import SocialShare from '@/components/ui/SocialShare.vue'
@@ -498,6 +499,10 @@ import StarSelecter from '@/components/ui/StarSelecter.vue'
 import Modal from '@/components/ui/Modal.vue'
 import Far from '@/components/ui/Far.vue'
 import Fas from '@/components/ui/Fas.vue'
+
+Vue.use(
+  vuescroll
+)
 
 Vue.use(
   Viewer, {
