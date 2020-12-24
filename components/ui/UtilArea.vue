@@ -2,7 +2,7 @@
   <div>
     <div class="field is-grouped is-grouped-centered">
       <NotifyRegister
-        v-if="!apiEndpoint.includes('keyword')"
+        v-if="!apiEndpoint.includes('keyword') && !apiEndpoint.includes('timeline')"
         class="control"
         :notifyTitle="articleTitle"
         :notifyTargetType="targetType"
@@ -40,7 +40,7 @@
     </div>
     <div class="field is-grouped is-grouped-centered">
       <nuxt-link
-        v-if="$store.state.user.obtainedProducts.includes(2) && !apiEndpoint.includes('all')"
+        v-if="$store.state.user.obtainedProducts.includes(2) && !apiEndpoint.includes('all') && !apiEndpoint.includes('timeline')"
         :to="writeArticleLink"
         class="control"
       >
@@ -52,7 +52,7 @@
         </div>
       </nuxt-link>
       <nuxt-link
-        v-if="articleID && !apiEndpoint.includes('all')"
+        v-if="articleID && !apiEndpoint.includes('all') && !apiEndpoint.includes('timeline')"
         :to="'/wiki/'+articleID"
         class="control"
       >
@@ -63,17 +63,34 @@
           <span class="tag is-link is-small">{{ $t('UtilArea.show_article') }}</span>
         </div>
       </nuxt-link>
+      <a
+        v-if="apiEndpoint.includes('artist') || apiEndpoint.includes('character')"
+        class="control"
+        @click="toggleFollowWrapped"
+      >
+        <div class="tags has-addons">
+          <span class="tag is-small">
+            <Far v-if="!following" i="check-square" classes="is-size-6" />
+            <Fas v-else i="check-square" classes="is-size-6" />
+          </span>
+          <span class="tag is-link is-small">
+            {{ $t('UtilArea.toggle_show') }}
+          </span>
+        </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 import Fas from '@/components/ui/Fas.vue'
+import Far from '@/components/ui/Far.vue'
 import NotifyRegister from '@/components/ui/NotifyRegister.vue'
 
 export default {
   components: {
     Fas,
+    Far,
     NotifyRegister
   },
   props: {
@@ -96,7 +113,8 @@ export default {
   },
   data () {
     return {
-      articleID: null
+      articleID: null,
+      following: false
     }
   },
   computed: {
@@ -134,6 +152,10 @@ export default {
       } else {
         this.toggleMute(true, 2, this.targetID)
       }
+    },
+    toggleFollowWrapped () {
+      this.toggleFollow(this.following, this.targetType, this.targetID)
+      this.following = !this.following
     }
   }
 }

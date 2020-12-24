@@ -44,6 +44,15 @@ Vue.mixin({
       } else {
         this.$notify({ group: 'default', type: 'success', duration: 2000, title: 'R18 / NSFW', text: '表示を無効にしました' })
       }
+    },
+    async toggleFollow (isAdded, targetType, targetID) {
+      if (!isAdded) {
+        await this.$axios.post('timeline/follow', { type: targetType, id: targetID })
+        this.$notify({ group: 'default', type: 'success', duration: 2000, title: 'タイムライン', text: 'フォローしました' })
+      } else {
+        await this.$axios.post('timeline/unfollow', { type: targetType, id: targetID })
+        this.$notify({ group: 'default', type: 'success', duration: 2000, title: 'タイムライン', text: 'フォローを解除しました' })
+      }
     }
   }
 })

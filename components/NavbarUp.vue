@@ -58,6 +58,10 @@
               <span class="icon"><Fas i="list" /></span>
               <span>{{ $t('NavbarUp.bar_items.list') }}</span>
             </nuxt-link>
+            <nuxt-link to="/search/timeline" class="navbar-item has-text-white" @click.native="closeAll($event)">
+              <span class="icon"><Fas i="list" /></span>
+              <span>{{ $t('NavbarUp.bar_items.timeline') }}</span>
+            </nuxt-link>
             <nuxt-link to="/ranking/monthly?sort=0" class="navbar-item has-text-white" @click.native="closeAll($event)">
               <span class="icon"><Fas i="crown" /></span>
               <span>{{ $t('NavbarUp.bar_items.ranking') }}</span>
@@ -136,9 +140,7 @@ export default {
       keyword: '',
       searchCategories: [
         { icon: 'users', name: 'character', endpoint: 'character', items: this.$store.state.characters },
-        { icon: 'tags', name: 'tag', endpoint: 'tag', items: this.$store.state.tags },
-        { icon: 'paint-brush', name: 'artist', endpoint: 'artist', items: this.$store.state.artists },
-        { icon: 'upload', name: 'uploader', endpoint: 'uploader', items: this.$store.state.uploaders }
+        { icon: 'paint-brush', name: 'artist', endpoint: 'artist', items: this.$store.state.artists }
       ]
     }
   },

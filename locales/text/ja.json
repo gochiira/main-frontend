@@ -53,6 +53,7 @@
       "character": "キャラ",
       "tag": "タグ",
       "artist": "絵師",
+      "timeline": "タイムライン",
       "uploader": "投稿者",
       "more": "もっと",
       "more_tab": "更に",
@@ -122,6 +123,7 @@
       "multiple_tag": "複合タグから検索",
       "keyword": "キーワードから検索",
       "character": "キャラクターから検索",
+      "timeline": "",
       "artist": "絵師から検索"
     },
     "sort": {

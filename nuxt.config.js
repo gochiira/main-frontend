@@ -236,7 +236,8 @@ export default {
           'faGrinBeam',
           'faGrinHearts',
           'faStar',
-          'faComments'
+          'faComments',
+          'faCheckSquare'
         ]
       },
       {
@@ -244,8 +245,8 @@ export default {
         icons: ['faTwitterSquare', 'faLine']
       },
       {
-        set: '@fortawesome/free-regular-svg-icons', // Brand icons
-        icons: ['faBookmark', 'faBell']
+        set: '@fortawesome/free-regular-svg-icons', // Regular icons
+        icons: ['faBookmark', 'faBell', 'faCheckSquare']
       }
     ]
   },

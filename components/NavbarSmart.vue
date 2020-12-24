@@ -92,6 +92,12 @@
               </nuxt-link>
             </li>
             <li>
+              <nuxt-link to="/search/timeline" class="navbar-item is-hoverable has-text-white" @click.native="openMenu = !openMenu">
+                <span class="icon"><Fas i="list" /></span>
+                <span>{{ $t('NavbarUp.bar_items.timeline') }}</span>
+              </nuxt-link>
+            </li>
+            <li>
               <nuxt-link to="/ranking/monthly?sort=0" class="navbar-item is-hoverable has-text-white" @click.native="openMenu = !openMenu">
                 <span class="icon"><Fas i="crown" /></span>
                 <span>{{ $t('NavbarUp.bar_items.ranking') }}</span>
@@ -192,11 +198,7 @@ export default {
       openSearch: false,
       searchItems: [
         { icon: 'users', name: 'character', to: '/list/character' },
-        { icon: 'tags', name: 'tag', to: '/list/tag' },
         { icon: 'paint-brush', name: 'artist', to: '/list/artist' },
-        { icon: 'keyboard', name: 'keyword', to: '/search_form/keyword' },
-        { icon: 'image', name: 'image', to: '/search/image' },
-        { icon: 'upload', name: 'uploader', to: '/list/uploader' },
         { icon: 'plus-square', name: 'more_tab', to: '/search/methods' }
       ],
       otherItems: [
